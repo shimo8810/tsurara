@@ -19,10 +19,6 @@ set whichwrap=b,s,[,],<,>
 set backspace=indent,eol,start
 set wildmenu
 
-imap { {}<LEFT>
-imap [ []<LEFT>
-imap ( ()<LEFT>
-
 if &compatible
   set nocompatible               " Be iMproved
 endif
@@ -39,7 +35,7 @@ call dein#add('Shougo/dein.vim')
 " Add or remove your plugins here:
 call dein#add('Shougo/neosnippet.vim')
 call dein#add('Shougo/neosnippet-snippets')
-
+call dein#add('Townk/vim-autoclose')
 " You can specify revision/branch/tag.
 "call dein#add('Shougo/vimshell', { 'rev': '3787e5' })
 
