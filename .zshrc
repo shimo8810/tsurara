@@ -69,7 +69,7 @@ fi
 
 # Then, source plugins and add commands to $PATH
 zplug load --verbose
-
+# nvm
 export NVM_DIR="/home/shimo/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
