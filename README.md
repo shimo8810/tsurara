@@ -12,5 +12,6 @@
 - [nvm](https://github.com/creationix/nvm)
 
 ## ToDo
-- install scriptの作成
-- init scriptの作成
+- install scriptの環境に応じた実装
+- init scriptの環境に応じた実装
+- .zshenv等の分離
