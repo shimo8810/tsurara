@@ -2,9 +2,9 @@
 自分用のDotfiles
 
 ##環境
-- zsh(zplug)
-- vim(dein.vim)
+- zsh([zplug](https://github.com/zplug/zplug))
+- vim([dein.vim](https://github.com/Shougo/dein.vim))
 
 ## ToDo
-- deploy scriptの作成
+- install scriptの作成
 - init scriptの作成
