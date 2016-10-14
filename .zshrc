@@ -166,3 +166,4 @@ elif type compctl &>/dev/null; then
   compctl -K _npm_completion npm
 fi
 ###-end-npm-completion-###
+BULLETTRAIN_NVM_SHOW=true
