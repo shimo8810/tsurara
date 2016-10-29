@@ -54,6 +54,8 @@ zplug "b4b4r07/enhancd", use:init.sh
 #zplug 'frmendes/geometry'
 zplug 'caiogondim/bullet-train-oh-my-zsh-theme'
 
+zplug 'esc/conda-zsh-completion'
+
 zplug "junegunn/fzf-bin", \
     as:command, \
     from:gh-r, \
@@ -69,6 +71,9 @@ fi
 
 # Then, source plugins and add commands to $PATH
 zplug load --verbose
+
+compinit conda
+compinit
 # nvm
 export NVM_DIR="/home/shimo/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
