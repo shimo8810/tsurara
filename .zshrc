@@ -12,6 +12,8 @@ HISTSIZE=1000
 SAVEHIST=1000
 HISTFILE=~/.zsh_history
 
+fpath+=~/.zfunc
+
 # Use modern completion system
 autoload -Uz compinit
 compinit
@@ -46,20 +48,19 @@ source ~/.zplug/init.zsh
 zplug "mollifier/anyframe"
 zplug 'zsh-users/zsh-history-substring-search'
 zplug 'zsh-users/zsh-completions'
-zplug 'zsh-users/zsh-syntax-highlighting', nice:10
+zplug 'zsh-users/zsh-syntax-highlighting', defer:2
 zplug 'zsh-users/zsh-autosuggestions'
 zplug 'chrissicool/zsh-256color'
 zplug 'plugins/git', from:oh-my-zsh
 zplug "b4b4r07/enhancd", use:init.sh
-#zplug 'frmendes/geometry'
-zplug 'caiogondim/bullet-train-oh-my-zsh-theme'
-
 zplug 'esc/conda-zsh-completion'
 
 zplug "junegunn/fzf-bin", \
     as:command, \
     from:gh-r, \
     rename-to:fzf
+
+zplug "caiogondim/bullet-train.zsh", as:theme
 
 # Install plugins if there are plugins that have not been installed
 if ! zplug check --verbose; then
@@ -70,7 +71,7 @@ if ! zplug check --verbose; then
 fi
 
 # Then, source plugins and add commands to $PATH
-zplug load --verbose
+zplug load #--verbose
 
 compinit conda
 compinit
@@ -172,3 +173,5 @@ elif type compctl &>/dev/null; then
 fi
 ###-end-npm-completion-###
 BULLETTRAIN_NVM_SHOW=true
+export PATH="$HOME/.cargo/bin:$PATH"
+
