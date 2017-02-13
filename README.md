@@ -15,3 +15,4 @@
 - install scriptの環境に応じた実装
 - init scriptの環境に応じた実装
 - .zshenv等の分離
+- 環境依存関係のファイル分離。pyenvのコマンドとかCUDAのパスとか
