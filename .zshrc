@@ -46,26 +46,17 @@ alias grep="grep --color=auto"
 
 source ~/.zplug/init.zsh
 zplug "mollifier/anyframe"
-<<<<<<< HEAD
-zplug "zsh-users/zsh-history-substring-search"
-zplug "zsh-users/zsh-completions"
-zplug "zsh-users/zsh-syntax-highlighting", defer:2
-=======
 zplug 'zsh-users/zsh-history-substring-search'
 zplug 'zsh-users/zsh-completions'
 zplug 'zsh-users/zsh-syntax-highlighting', defer:2
->>>>>>> bc9e3233da51f06bb1a226cc73515921df760599
 zplug 'zsh-users/zsh-autosuggestions'
 zplug "chrissicool/zsh-256color"
 zplug "plugins/git", from:oh-my-zsh
 zplug "b4b4r07/enhancd", use:init.sh
-<<<<<<< HEAD
 #zplug 'frmendes/geometry'
 #zplug "caiogondim/bullet-train-oh-my-zsh-theme", as:theme
 zplug "caiogondim/bullet-train.zsh", use:bullet-train.zsh-theme, defer:3 # defer until other plugins like oh-my-zsh is loaded
 
-=======
->>>>>>> bc9e3233da51f06bb1a226cc73515921df760599
 zplug 'esc/conda-zsh-completion'
 
 zplug "junegunn/fzf-bin", \
@@ -185,7 +176,6 @@ elif type compctl &>/dev/null; then
   compctl -K _npm_completion npm
 fi
 ###-end-npm-completion-###
-<<<<<<< HEAD
 # bullet train config
 BULLETTRAIN_PROMPT_ORDER=(
     time
@@ -204,8 +194,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
 
 function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
-=======
 BULLETTRAIN_NVM_SHOW=true
 export PATH="$HOME/.cargo/bin:$PATH"
 
->>>>>>> bc9e3233da51f06bb1a226cc73515921df760599
