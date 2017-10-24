@@ -1,5 +1,5 @@
-# Set up the prompt
-
+#Set up the prompt
+fpath+=~/.zfunc
 autoload -Uz promptinit
 promptinit
 #prompt adam1
@@ -14,7 +14,7 @@ HISTFILE=~/.zsh_history
 
 # Use modern completion system
 autoload -Uz compinit
-compinit
+compinit -C
 
 zstyle ':completion:*' auto-description 'specify: %d'
 zstyle ':completion:*' completer _expand _complete _correct _approximate
@@ -44,15 +44,16 @@ alias grep="grep --color=auto"
 
 source ~/.zplug/init.zsh
 zplug "mollifier/anyframe"
-zplug 'zsh-users/zsh-history-substring-search'
-zplug 'zsh-users/zsh-completions'
-zplug 'zsh-users/zsh-syntax-highlighting', nice:10
+zplug "zsh-users/zsh-history-substring-search"
+zplug "zsh-users/zsh-completions"
+zplug "zsh-users/zsh-syntax-highlighting", defer:2
 zplug 'zsh-users/zsh-autosuggestions'
-zplug 'chrissicool/zsh-256color'
-zplug 'plugins/git', from:oh-my-zsh
+zplug "chrissicool/zsh-256color"
+zplug "plugins/git", from:oh-my-zsh
 zplug "b4b4r07/enhancd", use:init.sh
 #zplug 'frmendes/geometry'
-zplug 'caiogondim/bullet-train-oh-my-zsh-theme'
+#zplug "caiogondim/bullet-train-oh-my-zsh-theme", as:theme
+zplug "caiogondim/bullet-train.zsh", use:bullet-train.zsh-theme, defer:3 # defer until other plugins like oh-my-zsh is loaded
 
 zplug 'esc/conda-zsh-completion'
 
@@ -70,10 +71,10 @@ if ! zplug check --verbose; then
 fi
 
 # Then, source plugins and add commands to $PATH
-zplug load --verbose
+zplug load #--verbose
 
-compinit conda
-compinit
+#compinit conda
+#compinit
 # nvm
 export NVM_DIR="/home/shimo/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -171,4 +172,21 @@ elif type compctl &>/dev/null; then
   compctl -K _npm_completion npm
 fi
 ###-end-npm-completion-###
-BULLETTRAIN_NVM_SHOW=true
+# bullet train config
+BULLETTRAIN_PROMPT_ORDER=(
+    time
+    status
+    custom
+    context
+    dir
+    screen
+    virtualenv
+    git
+    hg
+    cmd_exec_time
+)
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
+
+function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
