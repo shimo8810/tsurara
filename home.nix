@@ -20,13 +20,14 @@
   home.packages = with pkgs; [
     bat
     bottom
-    lsd
-    ripgrep
-    neovim
-    fzf
     duf
-    fd
     dust
+    fd
+    fzf
+    go-task
+    lsd
+    neovim
+    ripgrep
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     # pkgs.hello
