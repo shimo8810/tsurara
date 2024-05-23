@@ -18,7 +18,6 @@
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = with pkgs; [
-    bat
     bottom
     duf
     dust
@@ -139,5 +138,10 @@
 
   programs.alacritty = {
     enable = true;
+  };
+
+  programs.bat = {
+    enable = true;
+    config.theme = "Nord";
   };
 }
