@@ -142,7 +142,7 @@
       # Add a plugin from a specific commit
       # "vim-airline" = {
       #   url = "
-    # extraLuaConfig = builtins.readFile ./nvim/init.lua;
+    extraLuaConfig = builtins.readFile ./nvim/init.lua;
     # package = pkgs.neovim;
     # extraConfig = ''
     #   let g:python3_host_prog = "${pkgs.python3}/bin/python";
