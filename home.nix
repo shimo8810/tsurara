@@ -18,7 +18,6 @@
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = with pkgs; [
-    alacritty
     bat
     bottom
     duf
@@ -136,5 +135,9 @@
   };
   # histSize = 10000;
   # histFile = "${config.xdg.dataHome}/zsh/history";
+  };
+
+  programs.alacritty = {
+    enable = true;
   };
 }
