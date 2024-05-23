@@ -99,54 +99,35 @@
   # neovim configuration
   programs.neovim = {
     enable = true;
+    viAlias = true;
     vimAlias = true;
     defaultEditor = true;
-    plugins = [
-      pkgs.vimPlugins.nvim-treesitter
-    ];
-    # extraLuaConfig = ''
-    # local opt = vim.opt
-
-    # -- line number
-    # opt.number = true
-    # opt.numberwidth = 4
-
-    # -- cursor
-    # opt.cursorline = true
-    # opt.guicursor = ""
-
-    # -- tab and indent
-    # opt.tabstop = 2
-    # opt.shiftwidth = 2
-    # opt.expandtab = true
-    # opt.autoindent = true
-    # opt.smartindent = true
-
-    # -- color
-    # opt.termguicolors = true
-
-    # -- search
-    # opt.ignorecase = true
-    # opt.smartcase = true
-
-    # -- view
-    # opt.wrap = true
-
-    # -- files
-    # opt.backup = false
-    # opt.writebackup	= false
-    # opt.swapfile = false
-    # opt.undofile = false
-    # opt.autoread = true
-    # '';
-      # Add a plugin from a specific commit
-      # "vim-airline" = {
-      #   url = "
     extraLuaConfig = lib.fileContents ./nvim/init.lua;
-    # package = pkgs.neovim;
-    # extraConfig = ''
-    #   let g:python3_host_prog = "${pkgs.python3}/bin/python";
-    #   let g:python_host_prog = "${pkgs.python2}/bin/python";
-    # '';
+    plugins = with pkgs.vimPlugins; [
+      vim-nix
+      nvim-treesitter
+    ];
+  };
+
+  # zsh configuration
+  programs.zsh = {
+    enable = true;
+    enableCompletion = true;
+    # autosuggestion.enable = true;
+    syntaxHighlighting.enable = true;
+    shellAliases = {
+      ll = "ls -l";
+  };
+  zplug = {
+    enable = true;
+    plugins = [
+      { name = "zsh-users/zsh-autosuggestions"; } # Simple plugin installation
+      { name = "zsh-users/zsh-completions"; }
+      { name = "mafredri/zsh-async"; }
+      { name = "sindresorhus/pure"; }
+    ];
+  };
+  # histSize = 10000;
+  # histFile = "${config.xdg.dataHome}/zsh/history";
   };
 }
