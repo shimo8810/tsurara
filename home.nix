@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
 {
   # Home Manager needs a bit of information about you and the paths it should
@@ -26,7 +26,6 @@
     fzf
     go-task
     lsd
-    neovim
     ripgrep
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
@@ -84,6 +83,7 @@
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
+  # git configuration
   programs.git = {
     enable = true;
     userName = "shimo8810";
@@ -94,5 +94,59 @@
       init.defaultBranch = "main";
       color.ui = "auto";
     };
+  };
+
+  # neovim configuration
+  programs.neovim = {
+    enable = true;
+    vimAlias = true;
+    defaultEditor = true;
+    plugins = [
+      pkgs.vimPlugins.nvim-treesitter
+    ];
+    # extraLuaConfig = ''
+    # local opt = vim.opt
+
+    # -- line number
+    # opt.number = true
+    # opt.numberwidth = 4
+
+    # -- cursor
+    # opt.cursorline = true
+    # opt.guicursor = ""
+
+    # -- tab and indent
+    # opt.tabstop = 2
+    # opt.shiftwidth = 2
+    # opt.expandtab = true
+    # opt.autoindent = true
+    # opt.smartindent = true
+
+    # -- color
+    # opt.termguicolors = true
+
+    # -- search
+    # opt.ignorecase = true
+    # opt.smartcase = true
+
+    # -- view
+    # opt.wrap = true
+
+    # -- files
+    # opt.backup = false
+    # opt.writebackup	= false
+    # opt.swapfile = false
+    # opt.undofile = false
+    # opt.autoread = true
+    # '';
+      # Add a plugin from a specific commit
+      # "vim-airline" = {
+      #   url = "
+    # extraLuaConfig = builtins.readFile ./nvim/init.lua;
+    # package = pkgs.neovim;
+    # extraConfig = ''
+    #   let g:python3_host_prog = "${pkgs.python3}/bin/python";
+    #   let g:python_host_prog = "${pkgs.python2}/bin/python";
+    # '';
   };
 }
