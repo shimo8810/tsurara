@@ -17,8 +17,8 @@ opt.smartindent = true
 
 -- color
 opt.termguicolors = true
-opt.winblend = 0
-opt.pumblend = 0
+opt.winblend = 10
+opt.pumblend = 10
 
 -- search
 opt.ignorecase = true
