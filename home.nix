@@ -104,8 +104,13 @@
     defaultEditor = true;
     extraLuaConfig = lib.fileContents ./nvim/init.lua;
     plugins = with pkgs.vimPlugins; [
+      nerdtree
       vim-nix
       nvim-treesitter
+      {
+        plugin = nord-vim;
+        config = "colorscheme nord";
+      }
     ];
   };
 
@@ -121,7 +126,8 @@
   zplug = {
     enable = true;
     plugins = [
-      { name = "zsh-users/zsh-autosuggestions"; } # Simple plugin installation
+      { name = "zsh-users/zsh-autosuggestions"; }
+      { name = "zsh-users/zsh-syntax-highlighting"; }
       { name = "zsh-users/zsh-completions"; }
       { name = "mafredri/zsh-async"; }
       { name = "sindresorhus/pure"; }
