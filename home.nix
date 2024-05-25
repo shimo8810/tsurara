@@ -98,26 +98,15 @@
   # neovim configuration
   programs.neovim = {
     enable = true;
-    # viAlias = true;
-    # vimAlias = true;
-    # defaultEditor = true;
+    viAlias = true;
+    vimAlias = true;
+    defaultEditor = true;
     extraLuaConfig = lib.fileContents ./nvim/init.lua;
     plugins = with pkgs.vimPlugins; [
       nerdtree
       vim-nix
       nvim-treesitter
       nord-nvim
-    ];
-  };
-
-  programs.vim = {
-    enable = true;
-    defaultEditor = true;
-    extraConfig = lib.fileContents ./vim/vimrc;
-    plugins = with pkgs.vimPlugins; [
-      nerdtree
-      vim-airline
-      vim-airline-themes
     ];
   };
 
