@@ -17,8 +17,8 @@ opt.smartindent = true
 
 -- color
 opt.termguicolors = true
-opt.winblend = 10
-opt.pumblend = 10
+opt.winblend = 0
+opt.pumblend = 0
 
 -- search
 opt.ignorecase = true
@@ -33,3 +33,9 @@ opt.writebackup	= false
 opt.swapfile = false
 opt.undofile = false
 opt.autoread = true
+
+-- color scheme
+vim.g.nord_disable_background = true
+vim.g.nord_italic = false
+vim.g.nord_bold = false
+vim.cmd[[colorscheme nord]]

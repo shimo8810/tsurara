@@ -106,16 +106,14 @@
       nerdtree
       vim-nix
       nvim-treesitter
-      {
-        plugin = nord-vim;
-        config = "colorscheme nord";
-      }
+      nord-nvim
     ];
   };
 
   programs.vim = {
     enable = true;
     defaultEditor = true;
+    extraConfig = lib.fileContents ./vim/vimrc;
     plugins = with pkgs.vimPlugins; [
       nerdtree
       vim-airline
