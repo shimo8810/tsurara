@@ -98,9 +98,9 @@
   # neovim configuration
   programs.neovim = {
     enable = true;
-    viAlias = true;
-    vimAlias = true;
-    defaultEditor = true;
+    # viAlias = true;
+    # vimAlias = true;
+    # defaultEditor = true;
     extraLuaConfig = lib.fileContents ./nvim/init.lua;
     plugins = with pkgs.vimPlugins; [
       nerdtree
@@ -110,6 +110,16 @@
         plugin = nord-vim;
         config = "colorscheme nord";
       }
+    ];
+  };
+
+  programs.vim = {
+    enable = true;
+    defaultEditor = true;
+    plugins = with pkgs.vimPlugins; [
+      nerdtree
+      vim-airline
+      vim-airline-themes
     ];
   };
 
