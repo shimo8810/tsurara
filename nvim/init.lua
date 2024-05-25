@@ -1,3 +1,6 @@
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
 local opt = vim.opt
 
 -- line number
@@ -33,6 +36,12 @@ opt.writebackup	= false
 opt.swapfile = false
 opt.undofile = false
 opt.autoread = true
+
+-- nvim-tree.lua
+require("nvim-tree").setup()
+
+-- lualine
+require('lualine').setup()
 
 -- color scheme
 vim.g.nord_disable_background = true

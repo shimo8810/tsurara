@@ -103,10 +103,10 @@
     defaultEditor = true;
     extraLuaConfig = lib.fileContents ./nvim/init.lua;
     plugins = with pkgs.vimPlugins; [
-      nerdtree
-      vim-nix
-      nvim-treesitter
+      lualine-nvim
       nord-nvim
+      nvim-tree-lua
+      vim-nix
     ];
   };
 
