@@ -145,6 +145,7 @@
     initExtra = ''
       autoload -U promptinit; promptinit
       zstyle :prompt:pure:git:stash show yes
+      zstyle ':completion:*' menu select
     '';
   };
 
