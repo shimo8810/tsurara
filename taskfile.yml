@@ -1,6 +1,6 @@
-version: '3'
+version: "3"
 
 tasks:
   switch:
     cmds:
-      - home-manager switch --flake ~/.dotfiles
+      - home-manager switch --flake ~/.dotfiles#home_x64
