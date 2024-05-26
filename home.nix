@@ -108,9 +108,7 @@
     '';
   };
 
-  programs.alacritty = {
-    enable = true;
-  };
+  programs.alacritty.enable = true;
 
   programs.bat = {
     enable = true;
