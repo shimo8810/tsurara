@@ -1,4 +1,9 @@
-# dotfiles
+<h1 align="center">Tsurara</h1>
+<div align="center">
+  <img alt="nix" src="https://img.shields.io/badge/nix-5E81AC?style=for-the-badge&logo=nixos&logoColor=white">
+  <img alt="mit" src="https://img.shields.io/github/license/shimo8810/tsurara?style=for-the-badge">
+  <p>dotfiles with nix </p>
+</div>
 
 ## install
 
@@ -13,7 +18,7 @@ curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix 
 ### install dotfiles
 
 ```sh
-nix run nixpkgs#git -- clone git@github.com:shimo8810/tsurara.git ~/tsurara
+nix run 'nixpkgs#git' -- clone git@github.com:shimo8810/tsurara.git ~/tsurara
 nix run home-manager/master -- switch --flake ~/tsurara
 ```
 
