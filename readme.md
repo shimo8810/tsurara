@@ -13,8 +13,8 @@ curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix 
 ### install dotfiles
 
 ```sh
-git clone git@github.com:shimo8810/dotfiles.git ~/.dotfiles
-nix run home-manager/master -- switch --flake ~/.dotfiles
+nix run nixpkgs#git -- clone git@github.com:shimo8810/tsurara.git ~/tsurara
+nix run home-manager/master -- switch --flake ~/tsurara
 ```
 
 ## update
