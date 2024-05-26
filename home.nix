@@ -21,12 +21,14 @@
     fd
     fzf
     go-task
+    hackgen-nf-font
     lsd
     ripgrep
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage plain files is through 'home.file'.
   home.file = {
+    ".config/alacritty/alacritty.toml".source = ./alacritty/alacritty.toml;
   };
 
   # Home Manager can also manage your environment variables through 'home.sessionVariables'.
