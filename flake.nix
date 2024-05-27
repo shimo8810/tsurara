@@ -15,11 +15,12 @@
       pkgs = import nixpkgs {
         system = "x86_64-linux";
         overlays = [ nixgl.overlay ];
-        config.llowUnfree = true;
+        config.allowUnfree = true;
       };
     in {
       homeConfigurations."home_x64" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
+
         modules = [ ./home.nix ];
       };
     };
