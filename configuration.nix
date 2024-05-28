@@ -105,6 +105,9 @@
     papirus-icon-theme
     vim
     wget
+    brave
+    tdrop
+    vscode
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
