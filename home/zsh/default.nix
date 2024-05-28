@@ -1,5 +1,5 @@
 { pkgs, ... }: {
-      # zsh configuration
+  # zsh configuration
   programs.zsh = {
     enable = true;
     # enableCompletion = true;
