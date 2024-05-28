@@ -117,6 +117,6 @@
     config.theme = "Nord";
   };
 
-  # imports = [ ./nvim.nix ];
+  imports = [ ./neovim ];
 
 }
