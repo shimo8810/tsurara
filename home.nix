@@ -20,10 +20,11 @@
     dust
     fd
     fzf
-    nixpkgs-fmt
     go-task
     hackgen-nf-font
+    just
     lsd
+    nixpkgs-fmt
     ripgrep
   ];
 
