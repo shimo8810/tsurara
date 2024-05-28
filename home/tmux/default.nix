@@ -6,7 +6,7 @@
     historyLimit = 5000;
     mouse = true;
     keyMode = "vi";
-    prefix = "C-j";
+    prefix = "C-a";
     terminal = "screen-256color";
     tmuxinator.enable = true;
     plugins = with pkgs; [
