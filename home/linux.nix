@@ -35,6 +35,7 @@
     ./alacritty
     ./git
     ./neovim
+    ./tmux
     ./zsh
   ];
 
