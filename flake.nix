@@ -44,7 +44,7 @@
         extraSpecialArgs = {
           inherit inputs;
         };
-        modules = [ ./home/linux ];
+        modules = [ ./home/linux.nix ];
       };
     };
 }
