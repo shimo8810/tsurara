@@ -8,3 +8,7 @@ tasks:
   rebuild:
     cmds:
       - sudo nixos-rebuild switch --flake ~/tsurara
+
+  fmt:
+    cmds:
+      - nixpkgs-fmt ./
