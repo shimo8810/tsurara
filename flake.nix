@@ -15,7 +15,8 @@
         system = "x86_64-linux";
         config.allowUnfree = true;
       };
-    in {
+    in
+    {
       homeConfigurations."home_x64" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
         extraSpecialArgs = {

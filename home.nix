@@ -89,7 +89,7 @@
         {
           name = "zsh-users/zsh-syntax-highlighting";
           tags = [ "defer:2" ];
-         }
+        }
         { name = "zsh-users/zsh-completions"; }
         {
           name = "mafredri/zsh-async";
