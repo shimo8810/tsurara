@@ -102,6 +102,9 @@
     config.theme = "Nord";
   };
 
-  imports = [ ./neovim ];
+  imports = [
+    ./alacritty
+    ./neovim
+  ];
 
 }
