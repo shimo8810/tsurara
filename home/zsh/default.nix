@@ -10,7 +10,7 @@
       cat = "bat";
       grep = "rg";
     };
-    dotDir = ".config/zsh";
+    dotDir = "~/.config/zsh";
     zplug = {
       enable = true;
       plugins = [

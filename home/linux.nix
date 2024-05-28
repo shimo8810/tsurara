@@ -64,6 +64,7 @@
   imports = [
     ./alacritty
     ./neovim
+    ./zsh
   ];
 
 }
