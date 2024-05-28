@@ -7,6 +7,7 @@
     mouse = true;
     keyMode = "vi";
     prefix = "C-a";
+    disableConfirmationPrompt = true;
     terminal = "screen-256color";
     tmuxinator.enable = true;
     plugins = with pkgs; [
