@@ -4,3 +4,7 @@ tasks:
   switch:
     cmds:
       - home-manager switch --flake ~/tsurara#home_x64
+
+  rebuild:
+    cmds:
+      - sudo nixos-rebuild switch --flake ~/tsurara
