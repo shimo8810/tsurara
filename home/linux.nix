@@ -39,6 +39,7 @@
     ./git
     ./neovim
     ./tmux
+    ./zellij
     ./zsh
   ];
 
