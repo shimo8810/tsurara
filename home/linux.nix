@@ -38,6 +38,7 @@
     ./alacritty
     ./git
     ./neovim
+    ./sheldon
     ./tmux
     ./zellij
     ./zsh
