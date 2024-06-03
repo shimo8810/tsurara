@@ -43,3 +43,6 @@ white = '#ECEFF4'
 [cursor.style]
 shape = "Beam"
 blinking = "Always"
+
+[keyboard]
+bindings = [{ key = "F11", action = "ToggleFullscreen" }]
