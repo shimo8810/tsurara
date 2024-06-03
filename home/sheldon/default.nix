@@ -3,7 +3,7 @@
     sheldon
   ];
 
-    home.file = {
+  home.file = {
     ".config/sheldon/plugins.toml".source = ./plugins.toml;
   };
 }
