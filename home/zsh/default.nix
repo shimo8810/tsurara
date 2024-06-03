@@ -1,7 +1,7 @@
 { pkgs, ... }: {
   # zsh configuration
   programs.zsh = {
-    zprof.enable = true;
+    # zprof.enable = true;
     enable = true;
     shellAliases = {
       ls = "lsd";
