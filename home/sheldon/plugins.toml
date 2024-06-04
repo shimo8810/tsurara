@@ -1,12 +1,6 @@
 shell = "zsh"
 
-[templates]
-defer = """
-{{ hooks?.pre | nl }}{% for file in files %}zsh-defer source \"{{ file }}\"
-{% endfor %}{{ hooks?.post | nl }}"""
-
-[plugins.zsh-defer]
-github = "romkatv/zsh-defer"
+[plugins]
 
 [plugins.zsh-completions]
 github = "zsh-users/zsh-completions"
