@@ -1,9 +1,12 @@
 shell = "zsh"
 
-[plugins]
+[templates]
+defer = """
+{{ hooks?.pre | nl }}{% for file in files %}zsh-defer source \"{{ file }}\"
+{% endfor %}{{ hooks?.post | nl }}"""
 
-[plugins.base16]
-github = "chriskempson/base16-shell"
+[plugins.zsh-defer]
+github = "romkatv/zsh-defer"
 
 [plugins.zsh-completions]
 github = "zsh-users/zsh-completions"
