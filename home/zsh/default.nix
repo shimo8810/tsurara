@@ -1,4 +1,4 @@
-{ pkgs, lib, ... }: {
+{ pkgs, lib, lib, ... }: {
   # zsh configuration
   programs.zsh = {
     # zprof.enable = true;
@@ -12,6 +12,5 @@
 
     history.size = 100000;
     initExtra = lib.fileContents ./zshrc;
-      '';
   };
 }

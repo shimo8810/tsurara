@@ -17,6 +17,7 @@
     fzf
     go-task
     hackgen-nf-font
+    hyperfine
     just
     lsd
     nixpkgs-fmt
