@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{ pkgs, lib, ... }: {
   # zsh configuration
   programs.zsh = {
     # zprof.enable = true;
@@ -11,11 +11,7 @@
     dotDir = ".config/zsh";
 
     history.size = 100000;
-    initExtra = ''
-      autoload -U promptinit; promptinit
-      zstyle :prompt:pure:git:stash show yes
-      zstyle ':completion:*' menu select
-      eval "$(sheldon source)"
-    '';
+    initExtra = lib.fileContents ./zshrc;
+      '';
   };
 }
