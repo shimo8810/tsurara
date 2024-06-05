@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{ ... }: {
   # git configuration
   programs.git = {
     enable = true;

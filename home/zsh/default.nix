@@ -1,4 +1,4 @@
-{ pkgs, lib, ... }: {
+{ lib, ... }: {
   # zsh configuration
   programs.zsh = {
     # zprof.enable = true;
