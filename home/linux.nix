@@ -20,6 +20,7 @@
     hyperfine
     just
     lsd
+    nixd
     nixpkgs-fmt
     ripgrep
   ];
