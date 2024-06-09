@@ -7,7 +7,7 @@
   </div>
 </div>
 
-## install
+## Install
 
 ### install nix
 
@@ -24,8 +24,14 @@ nix run 'nixpkgs#git' -- clone git@github.com:shimo8810/tsurara.git ~/tsurara
 nix run home-manager/master -- switch --flake ~/tsurara
 ```
 
-## update
+## Update
 
 ```sh
 task switch
 ```
+
+## Screenshot
+
+<div align="center">
+  <img alt="screen-shot" width="640" src="./assets/screenshot.png">
+</div>
