@@ -8,9 +8,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     xremap-flake.url = "github:xremap/nix-flake";
+    hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
   };
 
-  outputs = inputs@{ nixpkgs, home-manager, xremap-flake, ... }:
+  outputs = inputs@{ nixpkgs, home-manager, xremap-flake, hyprland, ... }:
     {
       nixosConfigurations."pipkrake" = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
@@ -44,7 +45,13 @@
         extraSpecialArgs = {
           inherit inputs;
         };
-        modules = [ ./home/linux.nix ];
+        modules = [
+          hyprland.homeManagerModules.default
+          {
+            wayland.windowManager.hyprland.enable = true;
+          }
+          ./home/linux.nix
+        ];
       };
     };
 }

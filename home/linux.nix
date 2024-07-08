@@ -44,6 +44,7 @@
     ./tmux
     ./zellij
     ./zsh
+    ./hyprland
   ];
 
 }
