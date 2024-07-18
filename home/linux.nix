@@ -39,6 +39,7 @@
   imports = [
     ./alacritty
     ./git
+    ./helix
     ./neovim
     ./sheldon
     ./tmux
