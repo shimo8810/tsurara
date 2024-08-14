@@ -14,6 +14,7 @@
     dust
     fd
     firefox
+    fluxcd
     fzf
     go-task
     hackgen-nf-font
