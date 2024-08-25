@@ -38,6 +38,11 @@
     LC_TIME = "ja_JP.UTF-8";
   };
 
+  # programs.hyprland = {
+  #   enable = true;
+  #   package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
+  # };
+
   # Enable the X11 windowing system.
   services.xserver.enable = true;
 
