@@ -3,7 +3,7 @@ version: "3"
 tasks:
   switch:
     cmds:
-      - home-manager switch --flake ~/tsurara#home_x64
+      - home-manager switch --flake ~/tsurara
 
   rebuild:
     cmds:
