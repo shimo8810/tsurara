@@ -8,9 +8,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     xremap-flake.url = "github:xremap/nix-flake";
+    vscode-server.url = "github:nix-community/nixos-vscode-server"; 
   };
 
-  outputs = inputs@{ nixpkgs, home-manager, xremap-flake, ... }:
+  outputs = inputs@{ nixpkgs, home-manager, xremap-flake, vscode-server, ... }:
     {
       nixosConfigurations."pipkrake" = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
@@ -30,6 +31,10 @@
               };
             };
           }
+          vscode-server.nixosModules.default
+          ({ config, pkgs, ... }: {
+            services.vscode-server.enable = true;
+          })
         ];
         specialArgs = {
           inherit inputs;
@@ -44,7 +49,9 @@
         extraSpecialArgs = {
           inherit inputs;
         };
-        modules = [ ./home/linux.nix ];
+        modules = [
+          ./home/linux.nix
+        ];
       };
     };
 }
