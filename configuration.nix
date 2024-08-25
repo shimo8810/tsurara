@@ -1,10 +1,11 @@
-{ inputs, config, pkgs, xremap-flake, ... }:
+{ inputs, config, pkgs, ... }:
 
 {
   imports =
     [
       ./hardware-configuration.nix
       inputs.xremap-flake.nixosModules.default
+      inputs.vscode-server.nixosModules.default
     ];
 
   # Bootloader.
@@ -89,6 +90,7 @@
     };
   };
 
+  services.vscode-server.enable = true;
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
