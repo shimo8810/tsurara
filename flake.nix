@@ -18,7 +18,7 @@
     };
   };
 
-  outputs = inputs@{ nixpkgs, home-manager, xremap-flake, vscode-server, ... }:
+  outputs = inputs@{ self, nixpkgs, home-manager, xremap-flake, vscode-server, deploy-rs, ... }:
     let
       system = "x86_64-linux";
       host = "pipkrake";
@@ -55,8 +55,10 @@
 
       # deploy.nodes.${host} = {
       #   hostname = host;
-      #   profiles.system = { }
-      #     };
+      #   profiles.system = {
+      #     path = deploy-rs.lib.${system}.activate.nixos self.nixosConfigurations.${host};
+      #   };
+      # };
 
       homeConfigurations.${username} = home-manager.lib.homeManagerConfiguration {
         pkgs = import nixpkgs {
