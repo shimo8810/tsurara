@@ -3,7 +3,6 @@
 {
   imports =
     [
-      # Include the results of the hardware scan.
       ./hardware-configuration.nix
     ];
 
@@ -80,9 +79,6 @@
     isNormalUser = true;
     description = "shimo";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-      #  thunderbird
-    ];
     shell = pkgs.zsh;
   };
 
