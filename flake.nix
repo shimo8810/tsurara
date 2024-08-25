@@ -8,7 +8,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     xremap-flake.url = "github:xremap/nix-flake";
-    vscode-server.url = "github:nix-community/nixos-vscode-server"; 
+    vscode-server.url = "github:nix-community/nixos-vscode-server";
   };
 
   outputs = inputs@{ nixpkgs, home-manager, xremap-flake, vscode-server, ... }:
