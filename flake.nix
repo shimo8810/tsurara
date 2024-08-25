@@ -12,9 +12,14 @@
   };
 
   outputs = inputs@{ nixpkgs, home-manager, xremap-flake, vscode-server, ... }:
+    let
+      system = "x86_64-linux";
+      host = "pipkrake";
+      username = "shimo";
+    in
     {
-      nixosConfigurations."pipkrake" = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
+      nixosConfigurations.${host} = nixpkgs.lib.nixosSystem {
+        inherit system;
         modules = [
           ./configuration.nix
           xremap-flake.nixosModules.default
@@ -41,9 +46,9 @@
         };
       };
 
-      homeConfigurations."home_x64" = home-manager.lib.homeManagerConfiguration {
+      homeConfigurations.${username} = home-manager.lib.homeManagerConfiguration {
         pkgs = import nixpkgs {
-          system = "x86_64-linux";
+          inherit system;
           config.allowUnfree = true;
         };
         extraSpecialArgs = {
