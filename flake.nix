@@ -29,24 +29,6 @@
         inherit system;
         modules = [
           ./configuration.nix
-          xremap-flake.nixosModules.default
-          {
-            services.xremap = {
-              serviceMode = "system";
-              config = {
-                modmap = [
-                  {
-                    name = "capslock to control";
-                    remap.CapsLock = "Ctrl_L";
-                  }
-                ];
-              };
-            };
-          }
-          vscode-server.nixosModules.default
-          ({ config, pkgs, ... }: {
-            services.vscode-server.enable = true;
-          })
         ];
         specialArgs = {
           inherit inputs;
