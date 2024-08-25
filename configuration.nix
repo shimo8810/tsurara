@@ -4,6 +4,7 @@
   imports =
     [
       ./hardware-configuration.nix
+      inputs.xremap-flake.nixosModules.default
     ];
 
   # Bootloader.
@@ -74,6 +75,18 @@
     # use the example session manager (no others are packaged yet so this is enabled by default,
     # no need to redefine it in your config for now)
     #media-session.enable = true;
+  };
+
+  services.xremap = {
+    serviceMode = "system";
+    config = {
+      modmap = [
+        {
+          name = "capslock to control";
+          remap.CapsLock = "Ctrl_L";
+        }
+      ];
+    };
   };
 
   # Enable touchpad support (enabled default in most desktopManager).
