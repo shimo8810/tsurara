@@ -46,6 +46,7 @@
     ./tmux
     ./zellij
     ./zsh
+    ./wayland
   ];
 
 }
