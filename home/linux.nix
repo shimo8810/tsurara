@@ -20,12 +20,12 @@
     nixd
     nixpkgs-fmt
     ripgrep
-    nordic
-    candy-icons
-    tela-circle-icon-theme
-    orchis-theme
-    graphite-gtk-theme
-    tokyonight-gtk-theme
+    # nordic
+    # candy-icons
+    # tela-circle-icon-theme
+    # orchis-theme
+    # graphite-gtk-theme
+    # tokyonight-gtk-theme
   ];
 
   home.file = { };
