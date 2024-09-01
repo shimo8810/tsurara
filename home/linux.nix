@@ -33,6 +33,7 @@
     rust-bin.stable.latest.default
     python312
     deno
+    nixgl
   ];
 
   home.file = { };
