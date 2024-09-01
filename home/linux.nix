@@ -7,14 +7,10 @@
   home.stateVersion = "24.05";
 
   home.packages = with pkgs; [
-    arduino-cli
-    arduino-ide
     bottom
     duf
     dust
     fd
-    firefox
-    fluxcd
     fzf
     go-task
     hackgen-nf-font
