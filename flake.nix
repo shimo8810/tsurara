@@ -13,7 +13,6 @@
   outputs = inputs@{ self, nixpkgs, home-manager, nixgl, ... }:
     let
       system = "x86_64-linux";
-      host = "pipkrake";
       username = "shimo";
     in
     {
