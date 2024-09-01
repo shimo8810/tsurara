@@ -25,6 +25,7 @@
     tela-circle-icon-theme
     orchis-theme
     graphite-gtk-theme
+    tokyonight-gtk-theme
   ];
 
   home.file = { };
