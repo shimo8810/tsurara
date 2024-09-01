@@ -20,6 +20,11 @@
     nixd
     nixpkgs-fmt
     ripgrep
+    nordic
+    candy-icons
+    tela-circle-icon-theme
+    orchis-theme
+    graphite-gtk-theme
   ];
 
   home.file = { };
