@@ -8,9 +8,13 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nixgl.url = "github:nix-community/nixGL";
+    rust-overlay = {
+      url = "github:oxalica/rust-overlay";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = inputs@{ self, nixpkgs, home-manager, nixgl, ... }:
+  outputs = inputs@{ self, nixpkgs, home-manager, nixgl, rust-overlay, ... }:
     let
       system = "x86_64-linux";
       username = "shimo";
@@ -20,7 +24,10 @@
         pkgs = import nixpkgs {
           inherit system;
           config.allowUnfree = true;
-          overlays = [ nixgl.overlay ];
+          overlays = [
+            nixgl.overlay
+            rust-overlay.overlays.default
+          ];
         };
         extraSpecialArgs = {
           inherit inputs;

@@ -30,6 +30,7 @@
     nordzy-icon-theme
     nordzy-cursor-theme
     vimix-cursors
+    rust-bin.stable.latest.default
   ];
 
   home.file = { };
