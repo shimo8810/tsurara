@@ -31,6 +31,8 @@
     nordzy-cursor-theme
     vimix-cursors
     rust-bin.stable.latest.default
+    python312
+    deno
   ];
 
   home.file = { };
