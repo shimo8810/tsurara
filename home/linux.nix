@@ -34,7 +34,7 @@
   };
 
   imports = [
-    ./alacritty
+    # ./alacritty
     ./git
     ./helix
     ./neovim
