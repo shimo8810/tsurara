@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 
 {
   home.username = "shimo";
@@ -7,14 +7,10 @@
   home.stateVersion = "24.05";
 
   home.packages = with pkgs; [
-    arduino-cli
-    arduino-ide
     bottom
     duf
     dust
     fd
-    firefox
-    fluxcd
     fzf
     go-task
     hackgen-nf-font
@@ -24,6 +20,21 @@
     nixd
     nixpkgs-fmt
     ripgrep
+    nordic
+    candy-icons
+    tela-circle-icon-theme
+    orchis-theme
+    graphite-gtk-theme
+    tokyonight-gtk-theme
+    zafiro-icons
+    nordzy-icon-theme
+    nordzy-cursor-theme
+    vimix-cursors
+    python312
+    deno
+    rust-bin.stable.latest.default
+    # nixgl
+    solaar
   ];
 
   home.file = { };
@@ -38,7 +49,7 @@
   };
 
   imports = [
-    ./alacritty
+    # ./alacritty
     ./git
     ./helix
     ./neovim
@@ -46,7 +57,6 @@
     ./tmux
     ./zellij
     ./zsh
-    ./wayland
   ];
 
 }
