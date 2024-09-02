@@ -35,6 +35,7 @@
     # rust-bin.stable.latest.default
     # nixgl
     solaar
+    nixfmt-rfc-style
   ];
 
   home.file = { };
