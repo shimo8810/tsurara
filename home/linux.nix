@@ -30,10 +30,11 @@
     nordzy-icon-theme
     nordzy-cursor-theme
     vimix-cursors
-    rust-bin.stable.latest.default
     python312
     deno
+    rust-bin.stable.latest.default
     # nixgl
+    solaar
   ];
 
   home.file = { };

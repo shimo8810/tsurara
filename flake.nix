@@ -34,10 +34,7 @@
         pkgs = import nixpkgs {
           inherit system;
           config.allowUnfree = true;
-          overlays = [
-            # nixgl.overlay
-            rust-overlay.overlays.default
-          ];
+          overlays = [ (import rust-overlay) ];
         };
         extraSpecialArgs = { inherit inputs; };
         modules = [ ./home/linux.nix ];
