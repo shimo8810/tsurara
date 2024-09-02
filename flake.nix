@@ -24,7 +24,12 @@
     # };
   };
 
-  outputs = inputs@{ nixpkgs, home-manager, rust-overlay, ... }:
+  outputs =
+    inputs@{ nixpkgs
+    , home-manager
+    # , rust-overlay
+    , ...
+    }:
     let
       system = "x86_64-linux";
       username = "shimo";
