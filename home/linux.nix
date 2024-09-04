@@ -34,7 +34,7 @@
     deno
     # rust-bin.stable.latest.default
     # nixgl
-    solaar
+    # solaar
     nixfmt-rfc-style
   ];
 
