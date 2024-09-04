@@ -5,10 +5,9 @@ tasks:
     cmds:
       - home-manager switch --flake .
 
-  rebuild:
+  update:
     cmds:
-      - sudo nixos-rebuild switch --flake ~/tsurara
-
+      - nix flake update
   fmt:
     cmds:
       - nixfmt ./
