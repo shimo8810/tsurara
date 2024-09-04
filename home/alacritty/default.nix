@@ -1,4 +1,5 @@
-{ ... }: {
+{ ... }:
+{
 
   programs.alacritty = {
     enable = true;
@@ -7,7 +8,6 @@
         opacity = 0.85;
         blur = false;
       };
-
 
       font = {
         size = 16;
@@ -52,7 +52,10 @@
       };
 
       keyboard.bindings = [
-        { key = "F11"; action = "ToggleFullscreen"; }
+        {
+          key = "F11";
+          action = "ToggleFullscreen";
+        }
       ];
 
     };

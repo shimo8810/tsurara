@@ -1,4 +1,5 @@
-{ pkgs, ... }: {
+{ pkgs, ... }:
+{
   # zellij configuration
   home.packages = with pkgs; [
     zellij

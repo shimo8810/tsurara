@@ -25,11 +25,7 @@
   };
 
   outputs =
-    inputs@{ nixpkgs
-    , home-manager
-    # , rust-overlay
-    , ...
-    }:
+    inputs@{ nixpkgs, home-manager, ... }:
     let
       system = "x86_64-linux";
       username = "shimo";
@@ -41,7 +37,9 @@
           config.allowUnfree = true;
           # overlays = [ (import rust-overlay) ];
         };
-        extraSpecialArgs = { inherit inputs; };
+        extraSpecialArgs = {
+          inherit inputs;
+        };
         modules = [ ./home/linux.nix ];
       };
     };
