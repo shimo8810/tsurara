@@ -32,10 +32,15 @@
     vimix-cursors
     python312
     deno
-    # rust-bin.stable.latest.default
-    # nixgl
-    # solaar
+    gcc
+    go
+    # clang
     nixfmt-rfc-style
+    (fenix.combine [
+      fenix.stable.toolchain
+      fenix.targets.wasm32-unknown-unknown.stable.rust-std
+      fenix.targets.wasm32-wasi.stable.rust-std
+    ])
   ];
 
   home.file = { };
@@ -50,7 +55,6 @@
   };
 
   imports = [
-    # ./alacritty
     ./git
     ./helix
     ./neovim
