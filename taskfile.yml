@@ -5,6 +5,10 @@ tasks:
     cmds:
       - home-manager switch --flake .
 
+  rebuild:
+    cmds:
+      - sudo nixos-rebuild switch --flake .
+
   update:
     cmds:
       - nix flake update
