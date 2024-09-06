@@ -5,7 +5,6 @@ let
   mkNixosSystem =
     {
       system,
-      hostname,
       modules,
     }:
     inputs.nixpkgs.lib.nixosSystem {
