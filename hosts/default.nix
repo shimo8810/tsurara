@@ -50,7 +50,7 @@ in
     };
   };
 
-  home-manager = {
+  home = {
     "${username}@hemingway" = mkHomeManagerConfiguration {
       system = "x86_64-linux";
 

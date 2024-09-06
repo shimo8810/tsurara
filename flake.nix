@@ -25,6 +25,7 @@
   };
 
   outputs = inputs: {
-    homeConfigurations = (import ./hosts inputs).home-manager;
+    nixosConfigurations = (import ./hosts inputs).nixos;
+    homeConfigurations = (import ./hosts inputs).home;
   };
 }
