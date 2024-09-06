@@ -5,12 +5,12 @@
     enable = true;
     settings = {
       window = {
-        opacity = 0.85;
+        opacity = 0.6;
         blur = false;
       };
 
       font = {
-        size = 16;
+        size = 12;
         normal = {
           family = "HackGen35 Console NF";
           style = "Regular";
