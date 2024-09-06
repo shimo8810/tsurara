@@ -2,6 +2,19 @@ inputs:
 let
   username = "shimo";
 
+  mkNixosSystem =
+    {
+      system,
+      hostname,
+      modules,
+    }:
+    inputs.nixpkgs.lib.nixosSystem {
+      inherit system modules;
+      specialArgs = {
+        inherit inputs;
+      };
+    };
+
   mkHomeManagerConfiguration =
     {
       system,
@@ -27,14 +40,29 @@ let
         }
       ];
     };
+
 in
 {
+  nixos = {
+    pipkrake = mkNixosSystem {
+      system = "x86_64-linux";
+      modules = [ ./pipkrake/nixos.nix ];
+    };
+  };
+
   home-manager = {
     "${username}@hemingway" = mkHomeManagerConfiguration {
       system = "x86_64-linux";
 
       overlays = [ inputs.fenix.overlays.default ];
       modules = [ ./hemingway/home.nix ];
+    };
+
+    "${username}@pipkrake" = mkHomeManagerConfiguration {
+      system = "x86_64-linux";
+
+      overlays = [ inputs.fenix.overlays.default ];
+      modules = [ ./pipkrake/home.nix ];
     };
   };
 }

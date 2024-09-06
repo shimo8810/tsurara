@@ -3,6 +3,7 @@
   imports = [
     ../../home/cli
     ../../home/desktop
-    # ../../home/gui
+    ../../home/desktop/wayland.nix
+    ../../home/gui
   ];
 }
