@@ -20,23 +20,23 @@
       home-manager,
       fenix,
       ...
-
     }:
     let
       system = "x86_64-linux";
       username = "shimo";
     in
     {
-      homeConfigurations.${username} = home-manager.lib.homeManagerConfiguration {
-        pkgs = import nixpkgs {
-          inherit system;
-          config.allowUnfree = true;
-          overlays = [ fenix.overlays.default ];
-        };
-        extraSpecialArgs = {
-          inherit inputs;
-        };
-        modules = [ ./home/linux.nix ];
-      };
+      homeConfigurations = (import ./hosts inputs).home-manager;
+      #.${username} = home-manager.lib.homeManagerConfiguration {
+      #   pkgs = import nixpkgs {
+      #     inherit system;
+      #     config.allowUnfree = true;
+      #     overlays = [ fenix.overlays.default ];
+      #   };
+      #   extraSpecialArgs = {
+      #     inherit inputs;
+      #   };
+      #   modules = [ ./home/linux.nix ];
+      # };
     };
 }
