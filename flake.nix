@@ -13,13 +13,10 @@
     };
     xremap-flake = {
       url = "github:xremap/nix-flake";
-      # inputs.nixpkgs.follows = "nixpkgs";
-      # inputs.home-manager.follows = "home-manager";
     };
     vscode-server = {
       url = "github:nix-community/nixos-vscode-server";
       inputs.nixpkgs.follows = "nixpkgs";
-      # inputs.flake-utils.follows = "flake-utils";
     };
     hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
   };
