@@ -34,6 +34,14 @@
           ) 9
         )
       );
+    env = [
+      "GTK_IM_MODULE, fcitx"
+      "QT_IM_MODULE, fcitx"
+      "XMODIFIERS, @im=fcitx"
+    ];
+    exec-once = [
+      "fcitx5 -D"
+    ];
   };
 
   programs.waybar = {
