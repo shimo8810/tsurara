@@ -1,6 +1,6 @@
 { username, ... }:
 {
-  homeDirectory = "/home/${username}";
+  home.homeDirectory = "/home/${username}";
 
   imports = [
     ../../home/cli
