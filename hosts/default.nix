@@ -63,5 +63,12 @@ in
       overlays = [ inputs.fenix.overlays.default ];
       modules = [ ./pipkrake/home.nix ];
     };
+
+    "${username}@hokusai" = mkHomeManagerConfiguration {
+      system = "aarch64-darwin";
+
+      # overlays = [ inputs.fenix.overlays.default ];
+      modules = [ ./hokusai/home.nix ];
+    };
   };
 }
