@@ -26,13 +26,12 @@ let
         config.allowUnfree = true;
       };
       extraSpecialArgs = {
-        inherit inputs;
+        inherit inputs username;
       };
       modules = modules ++ [
         {
           home = {
             inherit username;
-            homeDirectory = "/home/${username}";
             stateVersion = "24.05";
           };
           programs.home-manager.enable = true;
@@ -52,22 +51,19 @@ in
   home = {
     "${username}@hemingway" = mkHomeManagerConfiguration {
       system = "x86_64-linux";
-
       overlays = [ inputs.fenix.overlays.default ];
       modules = [ ./hemingway/home.nix ];
     };
 
     "${username}@pipkrake" = mkHomeManagerConfiguration {
       system = "x86_64-linux";
-
       overlays = [ inputs.fenix.overlays.default ];
       modules = [ ./pipkrake/home.nix ];
     };
 
     "${username}@hokusai" = mkHomeManagerConfiguration {
       system = "aarch64-darwin";
-
-      # overlays = [ inputs.fenix.overlays.default ];
+      overlays = [ inputs.fenix.overlays.default ];
       modules = [ ./hokusai/home.nix ];
     };
   };
