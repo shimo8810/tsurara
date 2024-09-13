@@ -22,6 +22,9 @@
   };
 
   outputs = inputs: {
+
+    devShells = (import ./devshells inputs);
+
     nixosConfigurations = (import ./hosts inputs).nixos;
     homeConfigurations = (import ./hosts inputs).home;
   };
