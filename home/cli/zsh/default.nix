@@ -1,4 +1,4 @@
-{ lib, ... }:
+{ lib, pkgs, ... }:
 {
   # zsh configuration
   programs.zsh = {
@@ -13,5 +13,14 @@
 
     history.size = 100000;
     initExtra = lib.fileContents ./zshrc;
+  };
+
+  # shelldon, zsh package manager
+  home.packages = with pkgs; [
+    sheldon
+  ];
+
+  home.file = {
+    ".config/sheldon/plugins.toml".source = ./plugins.toml;
   };
 }
