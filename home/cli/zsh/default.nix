@@ -4,6 +4,10 @@
   programs.zsh = {
     # zprof.enable = true;
     enable = true;
+    enableCompletion = true;
+    autosuggestion.enable = true;
+    syntaxHighlighting.enable = true;
+
     shellAliases = {
       ls = "lsd";
       cat = "bat";
@@ -12,15 +16,17 @@
     dotDir = ".config/zsh";
 
     history.size = 100000;
-    initExtra = lib.fileContents ./zshrc;
+    # initExtra = lib.fileContents ./zshrc;
   };
 
   # shelldon, zsh package manager
-  home.packages = with pkgs; [
-    sheldon
-  ];
+  # home.packages = with pkgs; [
+  #   sheldon
+  # ];
 
-  home.file = {
-    ".config/sheldon/plugins.toml".source = ./plugins.toml;
-  };
+  # home.file = {
+  #   ".config/sheldon/plugins.toml".source = ./plugins.toml;
+  # };
+
+  programs.starship.enable = true;
 }
