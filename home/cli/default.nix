@@ -5,7 +5,6 @@
     ./git
     ./helix
     ./neovim
-    ./sheldon
     ./tmux
     ./zellij
     ./zsh
