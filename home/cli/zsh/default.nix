@@ -21,6 +21,10 @@
       size = 100000;
       path = "$ZDOTDIR/zsh_history";
     };
+
+    initExtra = ''
+      zstyle ':completion:*' menu select
+    '';
   };
 
   programs.starship = {
