@@ -15,8 +15,12 @@
     };
     dotDir = ".config/zsh";
 
-    history.size = 100000;
-    # initExtra = lib.fileContents ./zshrc;
+    history = {
+      expireDuplicatesFirst = true;
+      extended = true;
+      size = 100000;
+      path = "$ZDOTDIR/zsh_history";
+    };
   };
 
   programs.starship = {
