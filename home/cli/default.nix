@@ -20,14 +20,12 @@
     lsd
     nixd
     nixfmt-rfc-style
-    nixpkgs-fmt
     ripgrep
     hyperfine
     python312
     deno
     gcc
     go
-    # clang
     nixfmt-rfc-style
     (fenix.combine [
       fenix.stable.toolchain
