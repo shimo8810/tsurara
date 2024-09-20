@@ -4,9 +4,10 @@
 
   imports = [
     ./dunst.nix
-    ./hyprpaper
+    ./hyprpaper.nix
     ./hyprland.nix
     ./waybar.nix
     ./wofi.nix
+    ./settings.nix
   ];
 }
