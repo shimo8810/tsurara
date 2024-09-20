@@ -1,9 +1,21 @@
 { pkgs, ... }:
 {
 
-  home.packages = with pkgs; [
-    wofi
+  # home.packages =
+  #   with pkgs;
+  #   [
+  #   ];
+  imports = [
+    ./dunst
+    ./hyprpaper
+    ./hyprland
+    ./waybar
+    ./wofi
   ];
+
+  services.dunst = {
+    enable = true;
+  };
 
   services.hyprpaper = {
     enable = true;
