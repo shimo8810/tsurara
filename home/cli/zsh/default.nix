@@ -81,6 +81,10 @@
       [nix_shell]
       format = "[$name]($style) "
       style = "bright-black"
+
+      [hostname]
+      format = '@[$hostname]($style) '
+      style = "blue"
     '';
   };
 }
