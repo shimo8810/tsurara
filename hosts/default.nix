@@ -42,9 +42,9 @@ let
 in
 {
   nixos = {
-    pipkrake = mkNixosSystem {
+    montgomery = mkNixosSystem {
       system = "x86_64-linux";
-      modules = [ ./pipkrake/nixos.nix ];
+      modules = [ ./montgomery/nixos.nix ];
     };
   };
 
@@ -55,10 +55,10 @@ in
       modules = [ ./hemingway/home.nix ];
     };
 
-    "${username}@pipkrake" = mkHomeManagerConfiguration {
+    "${username}@montgomery" = mkHomeManagerConfiguration {
       system = "x86_64-linux";
       overlays = [ inputs.fenix.overlays.default ];
-      modules = [ ./pipkrake/home.nix ];
+      modules = [ ./montgomery/home.nix ];
     };
 
     "${username}@hokusai" = mkHomeManagerConfiguration {
