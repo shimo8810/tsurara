@@ -9,7 +9,7 @@
     enable = true;
     settings = {
       preload = "~/Pictures/wall2.jpg";
-      wallpaper = "eDP-1,~/Pictures/wall2.jpg";
+      wallpaper = ",~/Pictures/wall2.jpg";
     };
   };
 
