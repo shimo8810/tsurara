@@ -40,6 +40,7 @@
       $cmd_duration\
       $line_break\
       $python\
+      $nix_shell\
       $character"""
 
       [directory]
@@ -76,6 +77,18 @@
       [python]
       format = "[$virtualenv]($style) "
       style = "bright-black"
+
+      [nix_shell]
+      format = "[$name]($style) "
+      style = "bright-black"
+
+      [username]
+      format = "[$user]($style)"
+      style_user = "bright-cyan"
+
+      [hostname]
+      format = '@[$hostname]($style) '
+      style = "blue"
     '';
   };
 }
