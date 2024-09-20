@@ -10,7 +10,7 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  networking.hostName = "pipkrake";
+  networking.hostName = "montgomery";
 
   # Enable networking
   networking.networkmanager.enable = true;
