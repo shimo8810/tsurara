@@ -5,6 +5,13 @@
     wofi
   ];
 
+  services.hyprpaper = {
+    enable = true;
+    settings = {
+      preload = "~/Pictures/wall2.jpg";
+      wallpaper = "eDP-1,~/Pictures/wall2.jpg";
+    };
+  };
 
   wayland.windowManager.hyprland.enable = true;
   wayland.windowManager.hyprland.settings = {
