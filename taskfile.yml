@@ -12,6 +12,11 @@ tasks:
   update:
     cmds:
       - nix flake update
+
   fmt:
     cmds:
       - nixfmt ./
+
+  dev:
+    cmds:
+      - nix develop
