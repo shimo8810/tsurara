@@ -3,8 +3,8 @@
 
   home.packages = with pkgs; [
     wofi
-    wofi-emoji
   ];
+
 
   wayland.windowManager.hyprland.enable = true;
   wayland.windowManager.hyprland.settings = {
