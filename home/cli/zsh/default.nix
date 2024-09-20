@@ -82,6 +82,10 @@
       format = "[$name]($style) "
       style = "bright-black"
 
+      [username]
+      format = "[$user]($style)"
+      style_user = "bright-cyan"
+
       [hostname]
       format = '@[$hostname]($style) '
       style = "blue"
