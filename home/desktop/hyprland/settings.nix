@@ -4,6 +4,17 @@
     "$mod" = "SUPER";
     "$term" = "alacritty";
 
+    general = {
+      gaps_in = 3;
+      gaps_out = 5;
+      # resize_on_border = true;
+    };
+    gestures = {
+      workspace_swipe = true;
+      workspace_swipe_fingers = 3;
+    };
+    # gaps_in = 3;
+    # gaps_out = 5;
     bind =
       [
         "$mod, B, exec, brave"
@@ -28,7 +39,7 @@
         )
       );
     env = [
-      "GTK_IM_MODULE, fcitx"
+      # "GTK_IM_MODULE, fcitx"
       "QT_IM_MODULE, fcitx"
       "XMODIFIERS, @im=fcitx"
     ];
