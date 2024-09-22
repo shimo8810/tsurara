@@ -15,9 +15,25 @@
           [
         ];
         modules-right = [
-          "mpd"
-          "custom/mymodule#with-css-id"
-          "temperature"
+          # "mpd"
+          "idle_inhibitor"
+          # "pulseaudio"
+          "wireplumber"
+          "network"
+          # "power-profiles-daemon"
+          # "cpu"
+          # "memory"
+          # "temperature"
+          # "backlight"
+          # "keyboard-state"
+          # "sway/language"
+          "battery"
+          # "battery#bat2"
+          "tray"
+          "clock"
+          # "custom/power"
+        ];
+
         ];
       };
     };
