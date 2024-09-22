@@ -11,9 +11,8 @@
         modules-left = [
           "hyprland/workspaces"
         ];
-        modules-center = [
-          "sway/window"
-          "custom/hello-from-waybar"
+        modules-center =
+          [
         ];
         modules-right = [
           "mpd"
