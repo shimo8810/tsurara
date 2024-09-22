@@ -2,12 +2,15 @@
 
 {
   imports = [
-    ./git
+    ./bat.nix
+    ./git.nix
     ./helix
     ./neovim
     ./tmux
     ./zellij
-    ./zsh
+    ./zsh.nix
+    ./bat.nix
+    ./develop
   ];
 
   home.packages = with pkgs; [
@@ -18,24 +21,8 @@
     fzf
     go-task
     lsd
-    nixd
-    nixfmt-rfc-style
     ripgrep
     hyperfine
-    python312
-    deno
-    gcc
-    go
-    nixfmt-rfc-style
-    (fenix.combine [
-      fenix.stable.toolchain
-      fenix.targets.wasm32-unknown-unknown.stable.rust-std
-      fenix.targets.wasm32-wasi.stable.rust-std
-    ])
   ];
 
-  programs.bat = {
-    enable = true;
-    config.theme = "Nord";
-  };
 }
