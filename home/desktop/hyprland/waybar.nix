@@ -9,9 +9,7 @@
         position = "top";
         height = 20;
         modules-left = [
-          "sway/workspaces"
-          "sway/mode"
-          "wlr/taskbar"
+          "hyprland/workspaces"
         ];
         modules-center = [
           "sway/window"
