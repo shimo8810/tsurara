@@ -4,6 +4,8 @@
     brave
     firefox
     vscode
+    discord
+    slack
   ];
 
   imports = [
