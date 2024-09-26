@@ -74,9 +74,9 @@
 
         network = {
           format-wifi = "";
-          format-ethernet = "{ipaddr}/{cidr} ";
-          tooltip-format = "{ifname} via {gwaddr} ";
-          format-linked = "{ifname} (No IP) ";
+          format-ethernet = "{ipaddr}/{cidr}";
+          tooltip-format = "{ifname} via {gwaddr}";
+          format-linked = "{ifname} (No IP)";
           format-disconnected = "Disconnected ⚠";
           format-alt = "{ifname}: {ipaddr}/{cidr}";
         };
@@ -106,7 +106,7 @@
           };
           format = "{icon}";
           format-full = "{icon}";
-          format-charging = "";
+          format-charging = "󱐋";
           format-plugged = "";
           format-alt = "{capacity}% {time}";
           format-icons = [
