@@ -18,7 +18,7 @@
     bind =
       [
         "$mod, B, exec, brave"
-        ", Print, exec, grimblast copy area"
+        ", Print, exec, hyprshot -m output"
         "$mod, Return, exec, alacritty"
         "$mod, A, exec, wofi --show drun -width 512px"
       ]
