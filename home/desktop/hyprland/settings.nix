@@ -18,6 +18,12 @@
     # gaps_out = 5;
     bind =
       [
+        "$mod, Q, exec, $term"
+        "$mod, C, killactive"
+        "$mod SHIFT, M, exit"
+        "$mod, V, togglefloating"
+        "$mod, R, exec, $menu"
+
         "$mod, B, exec, brave"
         ", Print, exec, hyprshot -m output"
         "$mod, Return, exec, alacritty"
