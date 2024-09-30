@@ -51,6 +51,11 @@
           ) 9
         )
       );
+    bindm = [
+      # move/resize window
+      "$mod, mouse:272, movewindow"
+      "$mod, mouse:273, resizewindow"
+    ];
     env = [
       # "GTK_IM_MODULE, fcitx"
       "QT_IM_MODULE, fcitx"
