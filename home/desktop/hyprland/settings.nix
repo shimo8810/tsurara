@@ -24,6 +24,12 @@
         "$mod, V, togglefloating"
         "$mod, R, exec, $menu"
 
+        # move focus
+        "$mod, left, movefocus, l"
+        "$mod, right, movefocus, r"
+        "$mod, up, movefocus, u"
+        "$mod, down, movefocus, d"
+
         "$mod, B, exec, brave"
         ", Print, exec, hyprshot -m output"
         "$mod, Return, exec, alacritty"
