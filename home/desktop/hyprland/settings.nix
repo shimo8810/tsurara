@@ -8,14 +8,11 @@
     general = {
       gaps_in = 3;
       gaps_out = 5;
-      # resize_on_border = true;
     };
     gestures = {
       workspace_swipe = true;
       workspace_swipe_fingers = 3;
     };
-    # gaps_in = 3;
-    # gaps_out = 5;
     bind =
       [
         "$mod, Q, exec, $term"
@@ -30,14 +27,12 @@
         "$mod, up, movefocus, u"
         "$mod, down, movefocus, d"
 
+        # application
         "$mod, B, exec, brave"
         ", Print, exec, hyprshot -m output"
-        "$mod, Return, exec, alacritty"
-        "$mod, A, exec, wofi --show drun -width 512px"
       ]
       ++ (
         # workspaces
-        # binds $mod + [shift +] {1..9} to [move to] workspace {1..9}
         builtins.concatLists (
           builtins.genList (
             i:
