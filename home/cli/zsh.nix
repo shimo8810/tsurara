@@ -85,11 +85,11 @@
 
       [username]
       format = "[$user]($style)"
-      style_user = "bright-cyan"
+      style_user = "bright-black"
 
       [hostname]
-      format = '@[$hostname]($style) '
-      style = "blue"
+      format = '[@$hostname]($style) '
+      style = "bright-black"
     '';
   };
 }
