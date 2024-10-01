@@ -14,6 +14,7 @@
   ];
 
   home.packages = with pkgs; [
+    killall
     bottom
     duf
     dust
