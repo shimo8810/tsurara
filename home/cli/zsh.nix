@@ -44,6 +44,7 @@
       $character"""
 
       [directory]
+      read_only = " "
       style = "blue"
 
       [character]
