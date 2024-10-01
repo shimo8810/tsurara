@@ -3,7 +3,7 @@
   wayland.windowManager.hyprland.settings = {
     "$mod" = "SUPER";
     "$term" = "alacritty";
-    "$menu" = "wofi --show drun";
+    "$menu" = "pgrep wofi >/dev/null 2>&1 && killall -r wofi || wofi --show drun";
 
     general = {
       gaps_in = 3;
