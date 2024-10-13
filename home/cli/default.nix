@@ -20,7 +20,7 @@
     dust
     fd
     fzf
-    go-task
+    # go-task
     lsd
     ripgrep
     hyperfine
