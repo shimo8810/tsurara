@@ -18,6 +18,7 @@ inputs.nixpkgs.lib.genAttrs Systems (
       packages = with pkgs; [
         nixfmt-rfc-style
         nixd
+        go-task
       ];
 
       shellHook = ''
