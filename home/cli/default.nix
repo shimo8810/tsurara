@@ -25,6 +25,7 @@
     lsd
     monolith
     ripgrep
+    yt-dlp
   ];
 
 }
