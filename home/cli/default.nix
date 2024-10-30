@@ -14,16 +14,17 @@
   ];
 
   home.packages = with pkgs; [
-    killall
     bottom
     duf
     dust
     fd
     fzf
     go-task
-    lsd
-    ripgrep
     hyperfine
+    killall
+    lsd
+    monolith
+    ripgrep
   ];
 
 }
