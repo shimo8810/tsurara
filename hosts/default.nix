@@ -23,7 +23,11 @@ let
     inputs.home-manager.lib.homeManagerConfiguration {
       pkgs = import inputs.nixpkgs {
         inherit system overlays;
-        config.allowUnfree = true;
+        config = {
+          allowUnfree = true;
+          allowUnfreePredicate = (_: true);
+        };
+
       };
       extraSpecialArgs = {
         inherit inputs username;
