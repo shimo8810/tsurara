@@ -1,8 +1,6 @@
 {
   inputs,
   username,
-  config,
-  pkgs,
   ...
 }:
 {
