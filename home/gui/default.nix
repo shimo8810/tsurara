@@ -10,5 +10,6 @@
 
   imports = [
     ./alacritty
+    ./ghostty
   ];
 }
