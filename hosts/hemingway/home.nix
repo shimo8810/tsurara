@@ -21,6 +21,7 @@
   imports = [
     ../../home/cli
     ../../home/desktop
-    # ../../home/gui
+    ../../home/gui/alacritty
+    ../../home/gui/ghostty
   ];
 }
