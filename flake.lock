@@ -111,11 +111,11 @@
         "rust-analyzer-src": "rust-analyzer-src"
       },
       "locked": {
-        "lastModified": 1737268357,
-        "narHash": "sha256-J3At8JDKpQGDeDUcz1eh0h5yFwNH7fPfm+N95TxiOq4=",
+        "lastModified": 1737354756,
+        "narHash": "sha256-CCXoqOoXRJGsgRkyrCJOx+m+ukZ1i5dVRP/g8o4MbW8=",
         "owner": "nix-community",
         "repo": "fenix",
-        "rev": "f9662e6ea6020671e1e17102bd20d6692bb38aba",
+        "rev": "5edc630f5b1cae39beea96b392d0ec699e1e9d31",
         "type": "github"
       },
       "original": {
@@ -259,11 +259,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1737221749,
-        "narHash": "sha256-igllW0yG+UbetvhT11jnt9RppSHXYgMykYhZJeqfHs0=",
+        "lastModified": 1737299337,
+        "narHash": "sha256-0NBrY2A7buujKmeCbieopOMSbLxTu8TFcTLqAbTnQDw=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "97d7946b5e107dd03cc82f21165251d4e0159655",
+        "rev": "f8ef4541bb8a54a8b52f19b52912119e689529b3",
         "type": "github"
       },
       "original": {
@@ -428,11 +428,11 @@
         "xdph": "xdph"
       },
       "locked": {
-        "lastModified": 1737283122,
-        "narHash": "sha256-OYR4Rd63mJz61enYrwd6v5jGaTvICecHnXo9oxEn1iY=",
+        "lastModified": 1737310896,
+        "narHash": "sha256-Y0s1jBm18Dl9HKpXsLG0fN9Co2IKoGqtriZ/2Vncv5s=",
         "ref": "refs/heads/main",
-        "rev": "4da9b7cc5b50c346309378fbb5ae8aa07746fd33",
-        "revCount": 5686,
+        "rev": "407453166ce2a52433c7b0b4ee92a41e47ef8f6d",
+        "revCount": 5690,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/hyprwm/Hyprland"
@@ -455,11 +455,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1735774328,
-        "narHash": "sha256-vIRwLS9w+N99EU1aJ+XNOU6mJTxrUBa31i1r82l0V7s=",
+        "lastModified": 1737127640,
+        "narHash": "sha256-mIQ3/axCZ4g8ySwWRbW4fJcyC9v55uAii3cqlJRtW8g=",
         "owner": "hyprwm",
         "repo": "hyprland-protocols",
-        "rev": "e3b6af97ddcfaafbda8e2828c719a5af84f662cb",
+        "rev": "455c055883d9639d4fcbfcedb4c6d12ce313791e",
         "type": "github"
       },
       "original": {
