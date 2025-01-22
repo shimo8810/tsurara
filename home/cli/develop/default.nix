@@ -2,10 +2,11 @@
 {
 
   imports = [
-    ./rust.nix
+    ./bun.nix
     ./deno.nix
-    ./python.nix
     ./go.nix
     ./nix.nix
+    ./python.nix
+    ./rust.nix
   ];
 }
