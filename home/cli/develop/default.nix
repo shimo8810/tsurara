@@ -1,8 +1,5 @@
 { ... }:
 {
-  # home.packages = with pkgs; [
-  #   gcc
-  # ];
 
   imports = [
     ./rust.nix
