@@ -24,6 +24,8 @@
 
     initExtra = ''
       zstyle ':completion:*' menu select
+      fpath+=(/usr/share/zsh/site-functions)
+      export PATH=$HOME/.cargo/bin:$PATH
     '';
   };
 
