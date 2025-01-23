@@ -1,13 +1,9 @@
 { pkgs, ... }:
 {
   home.packages = with pkgs; [
-    (fenix.stable.withComponents [
-      "cargo"
-      "clippy"
-      "rust-src"
-      "rustc"
-      "rustfmt"
+    (fenix.combine [
+      fenix.stable.toolchain
+      fenix.targets.wasm32-unknown-unknown.stable.rust-std
     ])
-    rust-analyzer-nightly
   ];
 }
