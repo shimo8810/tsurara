@@ -21,7 +21,7 @@
     fzf
     go-task
     hyperfine
-    killall
+    tree
     lsd
     monolith
     ripgrep
