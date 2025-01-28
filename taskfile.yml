@@ -24,3 +24,11 @@ tasks:
   news:
     cmds:
       - home-manager news --flake .
+
+  daily:
+    cmds:
+      - nix flake update
+      - git add flake.lock
+      - 'git commit -m "build: update lock file"'
+      - git push
+      - NIXPKGS_ALLOW_UNFREE=1 home-manager switch --impure --flake .
