@@ -111,11 +111,11 @@
         "rust-analyzer-src": "rust-analyzer-src"
       },
       "locked": {
-        "lastModified": 1738218644,
-        "narHash": "sha256-1lzgesEFjyhCs4sO0Gu0QMjJyAkhKm9m9y71gLufL0M=",
+        "lastModified": 1738305171,
+        "narHash": "sha256-Bt7jBEGnOmxyvma4S7MFFf3vbPUiTbr8TJoZLXEDXKc=",
         "owner": "nix-community",
         "repo": "fenix",
-        "rev": "cc65b71af7eae5d015ff3c20a5f034c3d1fbac72",
+        "rev": "667e3751a708b886bb67879147f71c07b0014c7f",
         "type": "github"
       },
       "original": {
@@ -259,11 +259,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1738228963,
-        "narHash": "sha256-Ee5hVHM7AWxaq7XJN6xiZztTZX8csdXernjqaTW5r9I=",
+        "lastModified": 1738275749,
+        "narHash": "sha256-PM+cGduJ05EZ+YXulqAwUFjvfKpPmW080mcuN6R1POw=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "d963ed335b890a70ed53eecf14cdb21528eda9b8",
+        "rev": "a8159195bfaef3c64df75d3b1e6a68d49d392be9",
         "type": "github"
       },
       "original": {
@@ -428,11 +428,11 @@
         "xdph": "xdph"
       },
       "locked": {
-        "lastModified": 1738236612,
-        "narHash": "sha256-T//dxq7D3P8cE5LvgLkmezHOOYSdbyhksKpuSnKcI8o=",
+        "lastModified": 1738330616,
+        "narHash": "sha256-uokkg5O1fqfqmoCN9Hg9V/AcSrof2m9LvCpJKAKW4i0=",
         "ref": "refs/heads/main",
-        "rev": "32c0fa2f2fe02254d5887b38cf2cffa72ddfd769",
-        "revCount": 5762,
+        "rev": "a4b7d1c2d7538068ab4832a66f86801f5f75cc65",
+        "revCount": 5770,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/hyprwm/Hyprland"
@@ -1038,11 +1038,11 @@
     "rust-analyzer-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1738159098,
-        "narHash": "sha256-a5mozMFOfMrhgSJGXdcdXyS86ht6kGQ/YvVXuSrTqP4=",
+        "lastModified": 1738224931,
+        "narHash": "sha256-1zhfA5NBqin0Z79Se85juvqQteq7uClJMEb7l2pdDUY=",
         "owner": "rust-lang",
         "repo": "rust-analyzer",
-        "rev": "7fd6f72007fc60029505ed3cd8dc2e2ca56b9be1",
+        "rev": "3c2aca1e5e9fbabb4e05fc4baa62e807aadc476a",
         "type": "github"
       },
       "original": {
