@@ -8,9 +8,10 @@
     graphite-gtk-theme
     tokyonight-gtk-theme
     zafiro-icons
-    nordzy-icon-theme
-    nordzy-cursor-theme
+    # nordzy-icon-theme
+    # nordzy-cursor-theme
     vimix-cursors
     hackgen-nf-font
+    capitaine-cursors-themed
   ];
 }
