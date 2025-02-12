@@ -3,7 +3,7 @@
   home.packages = with pkgs; [
     nordic
     candy-icons
-    tela-circle-icon-theme
+    # tela-circle-icon-theme
     orchis-theme
     graphite-gtk-theme
     tokyonight-gtk-theme
