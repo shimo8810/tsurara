@@ -1,7 +1,7 @@
-{ pkgs, ... }:
+{ config, pkgs, ... }:
 {
-  home.packages = with pkgs; [
-    freecad
-    kicad
+  home.packages = [
+    (config.lib.nixGL.wrap pkgs.freecad)
+    (config.lib.nixGL.wrap pkgs.kicad)
   ];
 }
