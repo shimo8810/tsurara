@@ -21,5 +21,6 @@
     ../../home/desktop
     ../../home/gui/alacritty
     ../../home/gui/ghostty
+    ../../home/gui/cad.nix
   ];
 }
