@@ -22,5 +22,6 @@
     ../../home/gui/alacritty
     ../../home/gui/ghostty
     ../../home/gui/cad.nix
+    ../../home/gui/browser.nix
   ];
 }
