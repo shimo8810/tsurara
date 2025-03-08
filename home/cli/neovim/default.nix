@@ -4,7 +4,7 @@
     enable = true;
     viAlias = true;
     vimAlias = true;
-    defaultEditor = true;
+    defaultEditor = false;
     extraLuaConfig = lib.fileContents ./init.lua;
     plugins = with pkgs.vimPlugins; [
       lualine-nvim
