@@ -26,6 +26,10 @@
       zstyle ':completion:*' menu select
       fpath+=(/usr/share/zsh/site-functions)
       export PATH=$HOME/.cargo/bin:$PATH
+
+      bindkey "^[[3~" delete-char
+      bindkey "^[[H" beginning-of-line
+      bindkey "^[[F" end-of-line
     '';
   };
 
