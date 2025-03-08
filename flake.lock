@@ -428,11 +428,11 @@
         "xdph": "xdph"
       },
       "locked": {
-        "lastModified": 1741396322,
-        "narHash": "sha256-3bMuMiFbGEzhVuOVCusWSQvoBqELCrM+tHB2bmfjxAo=",
+        "lastModified": 1741440027,
+        "narHash": "sha256-f5PdTzORaYYLVMGDOPQVBiLu4bhbafp4DoC5KPmJGuE=",
         "ref": "refs/heads/main",
-        "rev": "b80b64cd6c913f8c8ac820a1e4ca615a62ff958f",
-        "revCount": 5871,
+        "rev": "c544c5115c8d35a2212b3dcb93ae90cf8a9f8f0c",
+        "revCount": 5872,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/hyprwm/Hyprland"
