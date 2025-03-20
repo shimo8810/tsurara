@@ -23,5 +23,6 @@
     ../../home/gui/ghostty
     ../../home/gui/cad.nix
     ../../home/gui/browser.nix
+    ../../home/gui/editor.nix
   ];
 }
