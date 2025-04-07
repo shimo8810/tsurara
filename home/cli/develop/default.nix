@@ -2,6 +2,7 @@
 {
 
   imports = [
+    ./aws.nix
     ./bun.nix
     ./deno.nix
     ./go.nix
