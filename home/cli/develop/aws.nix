@@ -6,5 +6,6 @@
 
   home.packages = with pkgs; [
     aws-sam-cli
+    python312Packages.cfn-lint
   ];
 }
