@@ -19,10 +19,6 @@
   imports = [
     ../../home/cli
     ../../home/desktop
-    ../../home/gui/alacritty
-    ../../home/gui/ghostty
-    ../../home/gui/cad.nix
-    ../../home/gui/browser.nix
-    ../../home/gui/editor.nix
+    ../../home/gui
   ];
 }
