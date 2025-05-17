@@ -111,11 +111,11 @@
         "rust-analyzer-src": "rust-analyzer-src"
       },
       "locked": {
-        "lastModified": 1747377480,
-        "narHash": "sha256-WDSp8MFeMoJfdpQXl9Oe11csQMSV/yFHD2YRSYw6VdA=",
+        "lastModified": 1747392669,
+        "narHash": "sha256-zky3+lndxKRu98PAwVK8kXPdg+Q1NVAhaI7YGrboKYA=",
         "owner": "nix-community",
         "repo": "fenix",
-        "rev": "34e07cd9d91ece6b1c69ea3c7ae7f9cdeb19448f",
+        "rev": "c3c27e603b0d9b5aac8a16236586696338856fbb",
         "type": "github"
       },
       "original": {
@@ -259,11 +259,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1747374689,
-        "narHash": "sha256-JT/aBZqmK1LbExzwT9cPkvxKc0IC4i6tZKOPjsSWFbI=",
+        "lastModified": 1747439237,
+        "narHash": "sha256-5rCGrnkglKKj4cav1U3HC+SIUNJh08pqOK4spQv9RjA=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "d2263ce5f4c251c0f7608330e8fdb7d1f01f0667",
+        "rev": "ae755329092c87369b9e9a1510a8cf1ce2b1c708",
         "type": "github"
       },
       "original": {
@@ -428,11 +428,11 @@
         "xdph": "xdph"
       },
       "locked": {
-        "lastModified": 1747301504,
-        "narHash": "sha256-N7eVRonAZ7N7SOl/4jMnqj7Cr/XDUI36mr9w/tKWy4A=",
+        "lastModified": 1747431568,
+        "narHash": "sha256-jtPTTHGcROvRfyJ5DPq/aQbRTJC9v1HVLPBner+XHcE=",
         "ref": "refs/heads/main",
-        "rev": "a5c9b3e49047b4f03f79c5146d8925363eab3072",
-        "revCount": 6114,
+        "rev": "2946009006bd8a988ff8a51b83528f6e1d8f0e98",
+        "revCount": 6116,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/hyprwm/Hyprland"
