@@ -24,6 +24,7 @@
 
     initContent = ''
       zstyle ':completion:*' menu select
+      zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
       fpath+=(/usr/share/zsh/site-functions)
       export PATH=$HOME/.cargo/bin:$PATH
 
