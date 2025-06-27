@@ -27,6 +27,7 @@
       zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
       fpath+=(/usr/share/zsh/site-functions)
       export PATH=$HOME/.cargo/bin:$PATH
+      export PATH=$HOME/.volta/bin:$PATH
 
       bindkey "^[[3~" delete-char
       bindkey "^[[H" beginning-of-line
