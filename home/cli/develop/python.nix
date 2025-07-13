@@ -2,6 +2,6 @@
 {
   home.packages = with pkgs; [
     uv
-    python312
+    python313
   ];
 }
