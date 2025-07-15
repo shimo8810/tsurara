@@ -8,7 +8,7 @@
     ./neovim
     ./tmux
     ./zellij
-    ./zsh.nix
+    ./zsh
     ./bat.nix
     ./develop
   ];
