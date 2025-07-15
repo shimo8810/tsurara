@@ -22,17 +22,7 @@
       path = "$ZDOTDIR/zsh_history";
     };
 
-    initContent = ''
-      zstyle ':completion:*' menu select
-      zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
-      fpath+=(/usr/share/zsh/site-functions)
-      export PATH=$HOME/.cargo/bin:$PATH
-      export PATH=$HOME/.volta/bin:$PATH
-
-      bindkey "^[[3~" delete-char
-      bindkey "^[[H" beginning-of-line
-      bindkey "^[[F" end-of-line
-    '';
+    initContent = builtins.readFile ./init_content.zsh;
   };
 
   programs.starship = {
