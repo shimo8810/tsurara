@@ -5,6 +5,8 @@
     enable = true;
     userName = "shimo8810";
     userEmail = "shimo.8810@gmail.com";
+    signing.key = "C1D2264169F90618";
+
     delta.enable = true;
     delta.options = {
       line-numbers = true;
@@ -17,6 +19,7 @@
       core.editor = "nvim";
       init.defaultBranch = "main";
       color.ui = "auto";
+      commit.gpgSign = true;
     };
   };
 }
