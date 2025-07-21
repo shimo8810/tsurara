@@ -3,7 +3,6 @@
   home.packages = with pkgs; [
     # nodejs
     # yarn
-    # volta
-    fnm
+    volta
   ];
 }
