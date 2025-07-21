@@ -3,7 +3,7 @@
   <img alt="nix" src="https://img.shields.io/badge/nix-5E81AC?style=for-the-badge&logo=nixos&logoColor=white">
   <img alt="mit" src="https://img.shields.io/github/license/shimo8810/tsurara?style=for-the-badge">
   <div>
-  <img alt="logo" src="./assets/header_image.jpg" width="320">
+  <img alt="logo" src="./assets/header_image.jpg" width="640">
   </div>
 </div>
 
