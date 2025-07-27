@@ -19,7 +19,6 @@
       expireDuplicatesFirst = true;
       extended = true;
       size = 100000;
-      path = "$ZDOTDIR/zsh_history";
     };
 
     initContent = builtins.readFile ./init_content.zsh;
