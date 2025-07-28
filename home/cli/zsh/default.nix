@@ -5,7 +5,13 @@
     # zprof.enable = true;
     enable = true;
     enableCompletion = true;
-    autosuggestion.enable = true;
+    autosuggestion = {
+      enable = true;
+      strategy = [
+        "match_prev_cmd"
+        "history"
+      ];
+    };
     syntaxHighlighting.enable = true;
 
     shellAliases = {
