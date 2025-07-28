@@ -26,6 +26,8 @@
     monolith
     ripgrep
     yt-dlp
+    gemini-cli
+    gh
   ];
 
 }
