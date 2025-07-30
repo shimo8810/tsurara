@@ -1,4 +1,4 @@
-{ ... }:
+{ config, ... }:
 {
   # zsh configuration
   programs.zsh = {
@@ -19,7 +19,7 @@
       cat = "bat";
       grep = "rg";
     };
-    dotDir = ".config/zsh";
+    dotDir = "${config.xdg.configHome}/zsh";
 
     history = {
       expireDuplicatesFirst = true;
