@@ -12,12 +12,17 @@
       skipSmudge = true;
     };
 
-      line-numbers = true;
-      side-by-side = true;
-      dark = true;
-      syntax-theme = "Nord";
-      keep-plus-minus-markers = true;
+    delta = {
+      enable = true;
+      options = {
+        line-numbers = true;
+        side-by-side = true;
+        dark = true;
+        syntax-theme = "Nord";
+        keep-plus-minus-markers = true;
+      };
     };
+
     extraConfig = {
       core.editor = "nvim";
       init.defaultBranch = "main";
