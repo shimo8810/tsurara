@@ -7,8 +7,11 @@
     userEmail = "shimo.8810@gmail.com";
     signing.key = "C1D2264169F90618";
 
-    delta.enable = true;
-    delta.options = {
+    lfs = {
+      enable = true;
+      skipSmudge = true;
+    };
+
       line-numbers = true;
       side-by-side = true;
       dark = true;
