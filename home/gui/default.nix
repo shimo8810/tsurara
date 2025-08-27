@@ -1,12 +1,12 @@
-{ config, pkgs, ... }:
+{ ... }:
 {
   # home.packages = with pkgs; [
-    # brave
-    # firefox
-    # vscode
-    # discord
-    # slack
-    # (config.lib.nixGL.wrap obsidian)
+  # brave
+  # firefox
+  # vscode
+  # discord
+  # slack
+  # (config.lib.nixGL.wrap obsidian)
   # ];
 
   imports = [
@@ -15,5 +15,6 @@
     ./cad.nix
     ./editor.nix
     ./ghostty
+    ./zed
   ];
 }
