@@ -15,6 +15,7 @@
     ./cad.nix
     ./editor.nix
     ./ghostty
+    ./obsidian.nix
     ./zed
   ];
 }
