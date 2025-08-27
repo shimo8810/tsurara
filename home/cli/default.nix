@@ -3,14 +3,15 @@
 {
   imports = [
     ./bat.nix
+    ./bat.nix
+    ./develop
+    ./gemini.nix
     ./git.nix
     ./helix
     ./neovim
     ./tmux
     ./zellij
     ./zsh
-    ./bat.nix
-    ./develop
   ];
 
   home.packages = with pkgs; [
