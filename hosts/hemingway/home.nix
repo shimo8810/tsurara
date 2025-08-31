@@ -1,4 +1,5 @@
 {
+  pkgs,
   inputs,
   username,
   ...
@@ -15,6 +16,9 @@
       "nvidia"
     ];
   };
+  home.packages = [
+    pkgs.diagram-as-code
+  ];
 
   imports = [
     ../../home/cli
