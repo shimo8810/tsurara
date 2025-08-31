@@ -55,7 +55,10 @@ in
   home = {
     "${username}@hemingway" = mkHomeManagerConfiguration {
       system = "x86_64-linux";
-      overlays = [ inputs.fenix.overlays.default ];
+      overlays = [
+        inputs.fenix.overlays.default
+        (import ../overlays/awsdac.nix)
+      ];
       modules = [ ./hemingway/home.nix ];
     };
 
