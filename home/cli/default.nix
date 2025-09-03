@@ -8,10 +8,12 @@
     ./gemini.nix
     ./git.nix
     ./helix
+    ./jq.nix
     ./neovim
     ./tmux
     ./yazi.nix
     ./zellij
+    ./zoxide.nix
     ./zsh
   ];
 
@@ -27,9 +29,12 @@
     lsd
     monolith
     ripgrep
-    yt-dlp
+    ffmpeg
     gemini-cli
     gh
+    poppler
+    resvg
+    yt-dlp
   ];
 
 }
