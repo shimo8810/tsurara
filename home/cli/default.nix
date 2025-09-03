@@ -10,6 +10,7 @@
     ./helix
     ./neovim
     ./tmux
+    ./yazi.nix
     ./zellij
     ./zsh
   ];
