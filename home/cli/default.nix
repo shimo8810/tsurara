@@ -35,6 +35,7 @@
     poppler
     resvg
     yt-dlp
+    xclip
   ];
 
 }
