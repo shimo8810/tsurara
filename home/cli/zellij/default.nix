@@ -1,11 +1,15 @@
-{ pkgs, ... }:
+{ ... }:
 {
   # zellij configuration
-  home.packages = with pkgs; [
-    zellij
-  ];
-
-  home.file = {
-    ".config/zellij/config.kdl".source = ./config.kdl;
+  programs.zellij = {
+    enable = true;
+    # enableZshIntegration = true;
+    settings = {
+      theme = "nord";
+      show_startup_tips = false;
+      default_layout = "compact";
+      # copy_clipboard = "primary";
+      copy_command = "xclip -selection clipboard";
+    };
   };
 }
