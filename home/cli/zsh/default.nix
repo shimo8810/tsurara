@@ -18,6 +18,7 @@
       ls = "lsd";
       cat = "bat";
       grep = "rg";
+      cd = "z";
     };
     dotDir = "${config.xdg.configHome}/zsh";
 
