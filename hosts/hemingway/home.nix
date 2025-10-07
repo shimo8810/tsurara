@@ -17,7 +17,7 @@
     ];
   };
   home.packages = [
-    pkgs.diagram-as-code
+    # pkgs.diagram-as-code
   ];
 
   imports = [
