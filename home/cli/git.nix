@@ -3,16 +3,28 @@
   # git configuration
   programs.git = {
     enable = true;
-    userName = "shimo8810";
-    userEmail = "shimo.8810@gmail.com";
-    signing.key = "C1D2264169F90618";
+
+    settings = {
+      user = {
+        name = "shimo8810";
+        email = "shimo.8810@gmail.com";
+        signingKey = "C1D2264169F90618";
+      };
+
+      color.ui = "auto";
+      core.editor = "nvim";
+      init.defaultBranch = "main";
+      commit.gpgSign = true;
+
+    };
 
     lfs = {
       enable = true;
       skipSmudge = true;
     };
 
-    delta = {
+  };
+
       enable = true;
       options = {
         line-numbers = true;
