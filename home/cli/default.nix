@@ -36,6 +36,7 @@
     resvg
     yt-dlp
     xclip
+    github-copilot-cli
   ];
 
 }
