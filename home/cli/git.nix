@@ -25,21 +25,16 @@
 
   };
 
-      enable = true;
-      options = {
-        line-numbers = true;
-        side-by-side = true;
-        dark = true;
-        syntax-theme = "Nord";
-        keep-plus-minus-markers = true;
-      };
-    };
+  programs.delta = {
+    enable = true;
+    enableGitIntegration = true;
 
-    extraConfig = {
-      core.editor = "nvim";
-      init.defaultBranch = "main";
-      color.ui = "auto";
-      commit.gpgSign = true;
+    options = {
+      line-numbers = true;
+      side-by-side = true;
+      dark = true;
+      syntax-theme = "Nord";
+      keep-plus-minus-markers = true;
     };
   };
 }
