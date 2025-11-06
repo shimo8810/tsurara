@@ -7,7 +7,7 @@
     # discord
     # slack
     # (config.lib.nixGL.wrap obsidian)
-    (config.lib.nixGL.wrap postman)
+    # (config.lib.nixGL.wrap postman)
   ];
 
   imports = [
