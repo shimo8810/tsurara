@@ -1,13 +1,14 @@
-{ ... }:
+{ config, pkgs, ... }:
 {
-  # home.packages = with pkgs; [
-  # brave
-  # firefox
-  # vscode
-  # discord
-  # slack
-  # (config.lib.nixGL.wrap obsidian)
-  # ];
+  home.packages = with pkgs; [
+    # brave
+    # firefox
+    # vscode
+    # discord
+    # slack
+    # (config.lib.nixGL.wrap obsidian)
+    (config.lib.nixGL.wrap postman)
+  ];
 
   imports = [
     ./alacritty
