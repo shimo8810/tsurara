@@ -1,7 +1,7 @@
 { pkgs, ... }:
 {
   programs.awscli = {
-    # enable = true;
+    enable = true;
   };
 
   home.packages = with pkgs; [
