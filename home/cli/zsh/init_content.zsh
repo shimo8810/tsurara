@@ -38,3 +38,5 @@ function rnd() {
   # コマンドの実行
   cat /dev/urandom | base64 | tr -d '\n' | fold -w "${width}" | head -n "${lines}"
 }
+
+eval "$(fnm env --use-on-cd --shell zsh)"
