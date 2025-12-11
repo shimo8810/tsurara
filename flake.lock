@@ -111,11 +111,11 @@
         "rust-analyzer-src": "rust-analyzer-src"
       },
       "locked": {
-        "lastModified": 1765252472,
-        "narHash": "sha256-byMt/uMi7DJ8tRniFopDFZMO3leSjGp6GS4zWOFT+uQ=",
+        "lastModified": 1765435813,
+        "narHash": "sha256-C6tT7K1Lx6VsYw1BY5S3OavtapUvEnDQtmQB5DSgbCc=",
         "owner": "nix-community",
         "repo": "fenix",
-        "rev": "8456b985f6652e3eef0632ee9992b439735c5544",
+        "rev": "6399553b7a300c77e7f07342904eb696a5b6bf9d",
         "type": "github"
       },
       "original": {
@@ -262,11 +262,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1765170903,
-        "narHash": "sha256-O8VTGey1xxiRW+Fpb+Ps9zU7ShmxUA1a7cMTcENCVNg=",
+        "lastModified": 1765384171,
+        "narHash": "sha256-FuFtkJrW1Z7u+3lhzPRau69E0CNjADku1mLQQflUORo=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "20561be440a11ec57a89715480717baf19fe6343",
+        "rev": "44777152652bc9eacf8876976fa72cc77ca8b9d8",
         "type": "github"
       },
       "original": {
@@ -433,11 +433,11 @@
         "xdph": "xdph"
       },
       "locked": {
-        "lastModified": 1765234193,
-        "narHash": "sha256-BPdoVHbvfMKf9mpmfGDTsEmqYfZIeQ/A5AJ8tprpMTY=",
+        "lastModified": 1765456802,
+        "narHash": "sha256-HT5VDV9Jcvsp6Ydf4B33H7nVSOJouN69HlKE+0fp6vQ=",
         "ref": "refs/heads/main",
-        "rev": "efe665b4558370af6e89921c487cd92890183961",
-        "revCount": 6700,
+        "rev": "2ca7ad7efc1e20588af5c823ee46f23afad6cf91",
+        "revCount": 6706,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/hyprwm/Hyprland"
@@ -950,11 +950,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1764983851,
-        "narHash": "sha256-y7RPKl/jJ/KAP/VKLMghMgXTlvNIJMHKskl8/Uuar7o=",
+        "lastModified": 1765311797,
+        "narHash": "sha256-mSD5Ob7a+T2RNjvPvOA1dkJHGVrNVl8ZOrAwBjKBDQo=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "d9bc5c7dceb30d8d6fafa10aeb6aa8a48c218454",
+        "rev": "09eb77e94fa25202af8f3e81ddc7353d9970ac1b",
         "type": "github"
       },
       "original": {
@@ -1105,11 +1105,11 @@
     "rust-analyzer-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1765120009,
-        "narHash": "sha256-nG76b87rkaDzibWbnB5bYDm6a52b78A+fpm+03pqYIw=",
+        "lastModified": 1765400135,
+        "narHash": "sha256-D3+4hfNwUhG0fdCpDhOASLwEQ1jKuHi4mV72up4kLQM=",
         "owner": "rust-lang",
         "repo": "rust-analyzer",
-        "rev": "5e3e9c4e61bba8a5e72134b9ffefbef8f531d008",
+        "rev": "fface27171988b3d605ef45cf986c25533116f7e",
         "type": "github"
       },
       "original": {
