@@ -11,9 +11,8 @@
         modules-left = [
           "hyprland/workspaces"
         ];
-        modules-center =
-          [
-          ];
+        modules-center = [
+        ];
         modules-right = [
           # "mpd"
           "idle_inhibitor"
