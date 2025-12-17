@@ -36,39 +36,38 @@
       workspace_swipe = true;
       workspace_swipe_fingers = 3;
     };
-    bind =
-      [
-        "$mod, Q, exec, $term"
-        "$mod, C, killactive"
-        "$mod SHIFT, M, exit"
-        "$mod, V, togglefloating"
-        "$mod, R, exec, $menu"
+    bind = [
+      "$mod, Q, exec, $term"
+      "$mod, C, killactive"
+      "$mod SHIFT, M, exit"
+      "$mod, V, togglefloating"
+      "$mod, R, exec, $menu"
 
-        # move focus
-        "$mod, left, movefocus, l"
-        "$mod, right, movefocus, r"
-        "$mod, up, movefocus, u"
-        "$mod, down, movefocus, d"
+      # move focus
+      "$mod, left, movefocus, l"
+      "$mod, right, movefocus, r"
+      "$mod, up, movefocus, u"
+      "$mod, down, movefocus, d"
 
-        # application
-        "$mod, B, exec, brave"
-        ", Print, exec, hyprshot -m output"
-      ]
-      ++ (
-        # workspaces
-        builtins.concatLists (
-          builtins.genList (
-            i:
-            let
-              ws = i + 1;
-            in
-            [
-              "$mod, code:1${toString i}, workspace, ${toString ws}"
-              "$mod SHIFT, code:1${toString i}, movetoworkspace, ${toString ws}"
-            ]
-          ) 9
-        )
-      );
+      # application
+      "$mod, B, exec, brave"
+      ", Print, exec, hyprshot -m output"
+    ]
+    ++ (
+      # workspaces
+      builtins.concatLists (
+        builtins.genList (
+          i:
+          let
+            ws = i + 1;
+          in
+          [
+            "$mod, code:1${toString i}, workspace, ${toString ws}"
+            "$mod SHIFT, code:1${toString i}, movetoworkspace, ${toString ws}"
+          ]
+        ) 9
+      )
+    );
     bindm = [
       # move/resize window
       "$mod, mouse:272, movewindow"

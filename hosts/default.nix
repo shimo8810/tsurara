@@ -39,6 +39,13 @@ let
             stateVersion = "25.11";
           };
           programs.home-manager.enable = true;
+
+          xdg.configFile."nixpkgs/config.nix".text = ''
+            {
+              allowUnfree = true;
+              allowUnfreePredicate = _pkg: true;
+            }
+          '';
         }
       ];
     };

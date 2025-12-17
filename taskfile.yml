@@ -3,7 +3,7 @@ version: "3"
 tasks:
   switch:
     cmds:
-      - NIXPKGS_ALLOW_UNFREE=1 home-manager switch --impure --flake .
+      - home-manager switch --impure --flake .
 
   rebuild:
     cmds:
@@ -27,8 +27,15 @@ tasks:
 
   daily:
     cmds:
-      - nix flake update
+      - task: update
+      - task: fmt
       - git add flake.lock
       - 'git commit -m "build: update lock file"'
       - git push
-      - NIXPKGS_ALLOW_UNFREE=1 home-manager switch --impure --flake .
+      - task: switch
+      - task: clean
+
+  clean:
+    cmds:
+      - home-manager expire-generations "-14 days"
+      - nix store gc -v --log-format bar-with-logs
