@@ -10,7 +10,7 @@
   xsession.enable = true;
 
   targets.genericLinux.nixGL = {
-    packages = inputs.nixgl.packages;
+    packages = inputs.nixgl.packages.${pkgs.system};
     defaultWrapper = "nvidia";
     installScripts = [
       "nvidia"
