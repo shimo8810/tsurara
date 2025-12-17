@@ -27,10 +27,13 @@ tasks:
 
   daily:
     cmds:
-      - nix flake update
+      - task: update
+      - task: fmt
       - git add flake.lock
       - 'git commit -m "build: update lock file"'
       - git push
+      - task: switch
+      - task: clean
 
   clean:
     cmds:
