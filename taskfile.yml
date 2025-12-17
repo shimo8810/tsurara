@@ -3,7 +3,7 @@ version: "3"
 tasks:
   switch:
     cmds:
-      - NIXPKGS_ALLOW_UNFREE=1 home-manager switch --impure --flake .
+      - home-manager switch --impure --flake .
 
   rebuild:
     cmds:
