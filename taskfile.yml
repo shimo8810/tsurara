@@ -1,34 +1,57 @@
 version: "3"
 
 tasks:
-  switch:
+  build:os:
+    desc: Build NixOS configuration
     cmds:
-      - home-manager switch --impure --flake .
+      - nixos-rebuild build --flake .
+
+  build:hm:
+    desc: Build home-manager configuration
+    cmds:
+      - home-manager build --impure --flake .
 
   rebuild:
+    desc: Rebuild NixOS configuration and switch to it
     cmds:
       - sudo nixos-rebuild switch --flake .
 
+  switch:
+    desc: Switch home-manager configuration
+    cmds:
+      - home-manager switch --impure --flake .
+
   update:
+    desc: Update nix flake inputs
     cmds:
       - nix flake update
 
   fmt:
+    desc: Format all nix files
     cmds:
-      - nixfmt ./
+      - treefmt
 
   dev:
     cmds:
       - nix develop
 
   news:
+    desc: Show home-manager news
     cmds:
       - home-manager news --flake .
 
+  diff:hm:
+    desc: Show diff between current and new home-manager configuration
+    cmds:
+      - nvd diff ~/.local/state/nix/profiles/home-manager result
+
   daily:
+    desc: Update flake inputs, format nix files, commit and push changes, switch home-manager config, and clean old generations
     cmds:
       - task: update
       - task: fmt
+      - task: build:hm
+      - task: diff:hm
       - git add flake.lock
       - 'git commit -m "build: update lock file"'
       - git push
@@ -36,6 +59,7 @@ tasks:
       - task: clean
 
   clean:
+    desc: Clean old generations and garbage collect nix store
     cmds:
       - home-manager expire-generations "-14 days"
       - nix store gc -v --log-format bar-with-logs

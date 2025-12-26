@@ -3,5 +3,7 @@
   home.packages = with pkgs; [
     nixd
     nixfmt-rfc-style
+    nvd
+    nixfmt-tree
   ];
 }

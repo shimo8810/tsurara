@@ -6,4 +6,7 @@
       fenix.targets.wasm32-unknown-unknown.stable.rust-std
     ])
   ];
+  programs.cargo = {
+    enable = true;
+  };
 }

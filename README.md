@@ -35,3 +35,11 @@ task switch
 <div align="center">
   <img alt="screen-shot" width="640" src="./assets/screenshot.png">
 </div>
+
+## commands
+
+- `task update`: update flake inputs
+- `task build:hm`: build home-manager configuration
+- `task fmt`: format nix files
+- `task switch`: update and apply configuration
+- `task clean`: clean nix store
