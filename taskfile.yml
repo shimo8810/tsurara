@@ -40,13 +40,18 @@ tasks:
     cmds:
       - home-manager news --flake .
 
+  diff:hm:
+    desc: Show diff between current and new home-manager configuration
+    cmds:
+      - nvd diff ~/.local/state/nix/profiles/home-manager result
+
   daily:
     desc: Update flake inputs, format nix files, commit and push changes, switch home-manager config, and clean old generations
     cmds:
       - task: update
       - task: fmt
       - task: build:hm
-      - nvd diff ~/.local/state/nix/profiles/home-manager result
+      - task: diff:hm
       - git add flake.lock
       - 'git commit -m "build: update lock file"'
       - git push
