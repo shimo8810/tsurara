@@ -62,22 +62,19 @@ in
   home = {
     "${username}@hemingway" = mkHomeManagerConfiguration {
       system = "x86_64-linux";
-      overlays = [
-        inputs.fenix.overlays.default
-        (import ../overlays/awsdac.nix)
-      ];
+      overlays = [ ];
       modules = [ ./hemingway/home.nix ];
     };
 
     "${username}@montgomery" = mkHomeManagerConfiguration {
       system = "x86_64-linux";
-      overlays = [ inputs.fenix.overlays.default ];
+      overlays = [ ];
       modules = [ ./montgomery/home.nix ];
     };
 
     "${username}@hokusai" = mkHomeManagerConfiguration {
       system = "aarch64-darwin";
-      overlays = [ inputs.fenix.overlays.default ];
+      overlays = [ ];
       modules = [ ./hokusai/home.nix ];
     };
   };
