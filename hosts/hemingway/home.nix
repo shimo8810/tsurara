@@ -9,12 +9,16 @@
 
   xsession.enable = true;
 
-  targets.genericLinux.nixGL = {
-    packages = inputs.nixgl.packages.${pkgs.stdenv.hostPlatform.system};
-    defaultWrapper = "nvidia";
-    installScripts = [
-      "nvidia"
-    ];
+  targets.genericLinux = {
+    enable = true;
+
+    nixGL = {
+      packages = inputs.nixgl.packages.${pkgs.stdenv.hostPlatform.system};
+      defaultWrapper = "nvidia";
+      installScripts = [
+        "nvidia"
+      ];
+    };
   };
 
   imports = [
