@@ -25,6 +25,7 @@ let
         inherit system overlays;
         config = {
           allowUnfree = true;
+          nvidia.acceptLicense = true;
           allowUnfreePredicate = (_: true);
         };
 
@@ -39,13 +40,6 @@ let
             stateVersion = "25.11";
           };
           programs.home-manager.enable = true;
-
-          xdg.configFile."nixpkgs/config.nix".text = ''
-            {
-              allowUnfree = true;
-              allowUnfreePredicate = _pkg: true;
-            }
-          '';
         }
       ];
     };
