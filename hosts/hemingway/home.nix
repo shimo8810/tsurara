@@ -30,9 +30,5 @@ in
     (root + "/home/modules/cli")
     (root + "/home/modules/dev")
     (root + "/home/modules/fonts.nix")
-
-    # ../../home/cli
-    # ../../home/desktop
-    # ../../home/gui
   ];
 }
