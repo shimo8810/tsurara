@@ -1,17 +1,21 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 {
 
   home.packages = with pkgs; [
     postman
+    freecad
+    kicad
+    librecad
+    gimp
   ];
 
   imports = [
-    ./alacritty
-    ./browser.nix
+    ./alacritty.nix
+    ./firefox.nix
     ./cad.nix
     ./editor.nix
-    ./ghostty
+    ./ghostty.nix
     ./obsidian.nix
-    ./zed
+    ./zed.nix
   ];
 }
