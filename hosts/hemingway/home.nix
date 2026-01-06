@@ -4,6 +4,9 @@
   username,
   ...
 }:
+let
+  root = inputs.self.outPath;
+in
 {
   home.homeDirectory = "/home/${username}";
 
@@ -23,8 +26,13 @@
   };
 
   imports = [
-    ../../home/cli
-    ../../home/desktop
-    ../../home/gui
+    (root + "/home/modules/apps")
+    (root + "/home/modules/cli")
+    (root + "/home/modules/dev")
+    (root + "/home/modules/fonts.nix")
+
+    # ../../home/cli
+    # ../../home/desktop
+    # ../../home/gui
   ];
 }

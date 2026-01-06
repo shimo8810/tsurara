@@ -2,12 +2,11 @@
 
 {
   imports = [
+    ./aws.nix
     ./bat.nix
-    ./bat.nix
-    ./develop
     ./gemini.nix
     ./git.nix
-    ./helix
+    ./helix.nix
     ./jq.nix
     ./neovim
     ./tmux
