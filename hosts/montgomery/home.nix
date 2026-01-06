@@ -1,4 +1,4 @@
-{ username, ... }:
+{ inputs, username, ... }:
 let
   root = inputs.self.outPath;
 in
