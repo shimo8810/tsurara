@@ -12,8 +12,6 @@
   imports = [
     ./alacritty.nix
     ./firefox.nix
-    ./cad.nix
-    ./editor.nix
     ./ghostty.nix
     ./obsidian.nix
     ./zed.nix
