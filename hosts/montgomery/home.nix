@@ -1,11 +1,15 @@
-{ username, ... }:
+{ inputs, username, ... }:
+let
+  root = inputs.self.outPath;
+in
 {
   home.homeDirectory = "/home/${username}";
 
   imports = [
-    ../../home/cli
-    ../../home/desktop
-    ../../home/desktop/hyprland
-    ../../home/gui
+    (root + "/home/modules/apps")
+    (root + "/home/modules/cli")
+    (root + "/home/modules/dev")
+    (root + "/home/modules/wm/hyprland")
+    (root + "/home/modules/fonts.nix")
   ];
 }
