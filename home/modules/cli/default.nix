@@ -29,7 +29,6 @@
     monolith
     ripgrep
     ffmpeg
-    gemini-cli
     gh
     poppler
     resvg
