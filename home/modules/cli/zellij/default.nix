@@ -1,6 +1,13 @@
-{ ... }:
+{ pkgs, isWayland, ... }:
 let
-  in
+  copyCommand =
+    if pkgs.stdenv.isDarwin then
+      "pbcopy"
+    else if isWayland then
+      "wl-copy"
+    else
+      "xclip -selection clipboard";
+in
 {
   programs.zellij = {
     enable = true;
@@ -10,7 +17,7 @@ let
       show_startup_tips = false;
       default_layout = "compact";
       pane_frames = false;
-      copy_command = "xclip -selection clipboard";
+      copy_command = copyCommand;
     };
   };
 }
