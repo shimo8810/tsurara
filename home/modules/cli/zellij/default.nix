@@ -5,7 +5,7 @@
     enable = true;
     # enableZshIntegration = true;
     settings = {
-      theme = "nord";
+      theme = "tokyo-night-storm";
       show_startup_tips = false;
       default_layout = "compact";
       # copy_clipboard = "primary";
