@@ -9,6 +9,9 @@ let
 in
 {
   home.homeDirectory = "/home/${username}";
+  home.sessionVariables = {
+    NIX_PATH = "nixpkgs=${pkgs.path}";
+  };
 
   xsession.enable = true;
 
