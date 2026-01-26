@@ -1,9 +1,9 @@
 { pkgs, ... }:
 {
   home.packages = with pkgs; [
-    nixd
-    # nixfmt-rfc-style
-    nvd
-    nixfmt-tree
+    nixd # nix LSP server
+    nixfmt # nix formatter
+    nvd # nix version diff
+    # nixfmt-tree
   ];
 }

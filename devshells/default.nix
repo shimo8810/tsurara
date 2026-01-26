@@ -17,6 +17,7 @@ inputs.nixpkgs.lib.genAttrs Systems (
       name = "tsurara";
       packages = with pkgs; [
         # nixfmt-rfc-style
+        nixfmt
         nixd
         go-task
       ];
