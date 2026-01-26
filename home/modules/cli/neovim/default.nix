@@ -1,11 +1,12 @@
-{ pkgs, lib, ... }:
+{ pkgs, ... }:
 {
   programs.neovim = {
     enable = true;
     viAlias = true;
     vimAlias = true;
     defaultEditor = false;
-    extraLuaConfig = lib.fileContents ./init.lua;
+    initLua = builtins.readFile ./init.lua;
+
     plugins = with pkgs.vimPlugins; [
       lualine-nvim
       nord-nvim
