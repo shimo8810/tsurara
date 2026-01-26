@@ -19,6 +19,7 @@ let
       system,
       overlays,
       modules,
+      params ? { },
     }:
     inputs.home-manager.lib.homeManagerConfiguration {
       pkgs = import inputs.nixpkgs {
@@ -30,7 +31,7 @@ let
         };
 
       };
-      extraSpecialArgs = {
+      extraSpecialArgs = params // {
         inherit inputs username;
       };
       modules = modules ++ [
@@ -60,6 +61,9 @@ in
         inputs.fenix.overlays.default
       ];
       modules = [ ./hemingway/home.nix ];
+      params = {
+        isWayland = false;
+      };
     };
 
     "${username}@montgomery" = mkHomeManagerConfiguration {
@@ -68,6 +72,9 @@ in
         inputs.fenix.overlays.default
       ];
       modules = [ ./montgomery/home.nix ];
+      params = {
+        isWayland = true;
+      };
     };
 
     "${username}@hokusai" = mkHomeManagerConfiguration {
@@ -76,6 +83,9 @@ in
         inputs.fenix.overlays.default
       ];
       modules = [ ./hokusai/home.nix ];
+      params = {
+        isWayland = false;
+      };
     };
   };
 }
