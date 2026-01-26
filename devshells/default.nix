@@ -16,7 +16,7 @@ inputs.nixpkgs.lib.genAttrs Systems (
     default = pkgs.mkShell {
       name = "tsurara";
       packages = with pkgs; [
-        nixfmt-rfc-style
+        # nixfmt-rfc-style
         nixd
         go-task
       ];
