@@ -11,7 +11,7 @@
     ./neovim
     ./tmux
     ./yazi.nix
-    ./zellij
+    ./zellij.nix
     ./zoxide.nix
     ./zsh
   ];
