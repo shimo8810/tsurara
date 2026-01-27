@@ -29,7 +29,7 @@ tasks:
   fmt:
     desc: Format all nix files
     cmds:
-      - treefmt
+      - nixfmt ./**/*.nix
 
   dev:
     cmds:
