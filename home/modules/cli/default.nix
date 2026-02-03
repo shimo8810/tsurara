@@ -4,6 +4,7 @@
   imports = [
     ./aws.nix
     ./bat.nix
+    ./codex.nix
     ./gemini.nix
     ./git.nix
     ./helix.nix
