@@ -22,21 +22,22 @@
     duf
     dust
     fd
-    fzf
-    go-task
-    hyperfine
-    tree
-    lsd
-    monolith
-    ripgrep
     ffmpeg
+    fzf
     gemini-cli
     gh
+    github-copilot-cli
+    go-task
+    hyperfine
+    lsd
+    monolith
     poppler
     resvg
-    yt-dlp
+    ripgrep
+    todoist
+    tree
     xclip
-    github-copilot-cli
+    yt-dlp
   ];
 
 }
