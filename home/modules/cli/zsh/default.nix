@@ -20,6 +20,7 @@
       grep = "rg";
       cd = "z";
       pn = "pnpm";
+      tq = "todoist quick";
     };
     dotDir = "${config.xdg.configHome}/zsh";
 
