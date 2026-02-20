@@ -1,9 +1,9 @@
 { ... }:
 {
-  programs.codex = {
-    enable = true;
-    custom-instructions = "";
-    settings = { };
-    skills = { };
-  };
+  # programs.codex = {
+  #   enable = true;
+  #   custom-instructions = "";
+  #   settings = { };
+  #   skills = { };
+  # };
 }
