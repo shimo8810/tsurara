@@ -4,7 +4,7 @@
     enable = true;
     viAlias = true;
     vimAlias = true;
-    defaultEditor = false;
+    defaultEditor = true;
     initLua = builtins.readFile ./init.lua;
 
     plugins = with pkgs.vimPlugins; [
