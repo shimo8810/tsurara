@@ -8,6 +8,7 @@ tasks:
 
   build:hm:
     desc: Build home-manager configuration
+    deps: [check:nvidia]
     cmds:
       - home-manager build --impure --flake .
 
@@ -57,6 +58,37 @@ tasks:
       - git push
       - task: switch
       - task: clean
+
+  check:nvidia:
+    desc: Check if the NVIDIA driver version in home.nix matches the installed driver
+    cmds:
+      - |
+        configured=$(grep -oP '(?<=version = ")[^"]+' hosts/hemingway/home.nix)
+        installed=$(nvidia-smi --query-gpu=driver_version --format=csv,noheader 2>/dev/null | head -1)
+        if [ -z "$installed" ]; then
+          echo "NVIDIA driver not found on this host, skipping check."
+          exit 0
+        fi
+        echo "Configured: $configured"
+        echo "Installed:  $installed"
+        if [ "$configured" != "$installed" ]; then
+          echo ""
+          echo "WARNING: Driver version mismatch! Update hosts/hemingway/home.nix."
+          exit 1
+        else
+          echo "OK: versions match."
+        fi
+
+  nvidia:prefetch:
+    desc: Fetch sha256 hash for a given NVIDIA driver version
+    summary: |
+      Usage: task nvidia:prefetch VERSION=580.95.05
+    vars:
+      URL: https://download.nvidia.com/XFree86/Linux-x86_64/{{.VERSION}}/NVIDIA-Linux-x86_64-{{.VERSION}}.run
+    cmds:
+      - nix store prefetch-file {{.URL}}
+    requires:
+      vars: [VERSION]
 
   clean:
     desc: Clean old generations and garbage collect nix store
