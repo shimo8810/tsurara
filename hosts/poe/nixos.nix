@@ -1,14 +1,18 @@
-# Edit this configuration file to define what should be installed on
-# your system.  Help is available in the configuration.nix(5) man page
-# and in the NixOS manual (accessible by running ‘nixos-help’).
-
-{ config, pkgs, ... }:
+{
+  inputs,
+  config,
+  pkgs,
+  ...
+}:
 
 {
-  imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-    ];
+  imports = [
+    # Include the results of the hardware scan.
+    ./hardware-configuration.nix
+    inputs.xremap-flake.nixosModules.default
+    inputs.vscode-server.nixosModules.default
+  ];
+  services.vscode-server.enable = true;
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
@@ -93,16 +97,28 @@
 
     fontconfig = {
       defaultFonts = {
-        serif = [ "Noto Serif CJK JP" "Noto Color Emoji" ];
-        sansSerif = [ "Nono Sans CJK JP" "Noto Color Emoji" ];
-        monospace = [ "Noto Sans Moo CJK JP" "Noto Color Emoji" ];
+        serif = [
+          "Noto Serif CJK JP"
+          "Noto Color Emoji"
+        ];
+        sansSerif = [
+          "Nono Sans CJK JP"
+          "Noto Color Emoji"
+        ];
+        monospace = [
+          "Noto Sans Moo CJK JP"
+          "Noto Color Emoji"
+        ];
       };
     };
 
     # antialias = true;
 
   };
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings.experimental-features = [
+    "nix-command"
+    "flakes"
+  ];
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
@@ -110,10 +126,13 @@
   users.users.shimo = {
     isNormalUser = true;
     description = "shimo";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+    ];
     packages = with pkgs; [
       kdePackages.kate
-    #  thunderbird
+      #  thunderbird
     ];
   };
 
