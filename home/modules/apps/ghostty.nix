@@ -16,6 +16,9 @@
       cursor-style-blink = "true";
 
       copy-on-select = true;
+
+      # fcitx5 が Ctrl+Space を受け取れるようにアンバインド
+      keybind = "ctrl+space=unbind";
     };
   };
 }
