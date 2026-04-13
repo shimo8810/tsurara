@@ -94,5 +94,17 @@ in
         isWayland = false;
       };
     };
+
+    "${username}@poe" = mkHomeManagerConfiguration {
+      system = "x86_64-linux";
+      overlays = [
+        inputs.fenix.overlays.default
+      ];
+      modules = [ ./poe/home.nix ];
+      params = {
+        isWayland = true;
+      };
+    };
+
   };
 }
