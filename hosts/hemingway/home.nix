@@ -11,6 +11,9 @@ in
   home.homeDirectory = "/home/${username}";
   home.sessionVariables = {
     NIX_PATH = "nixpkgs=${pkgs.path}";
+    GTK_IM_MODULE = "fcitx";
+    QT_IM_MODULE = "fcitx";
+    XMODIFIERS = "@im=fcitx";
   };
 
   xsession.enable = true;
