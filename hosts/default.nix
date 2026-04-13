@@ -54,6 +54,13 @@ in
     };
   };
 
+  nixos = {
+    poe = mkNixosSystem {
+      system = "x86_64-linux";
+      modules = [ ./poe/nixos.nix ];
+    };
+  };
+
   home = {
     "${username}@hemingway" = mkHomeManagerConfiguration {
       system = "x86_64-linux";
