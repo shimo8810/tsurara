@@ -6,5 +6,6 @@
     # volta
     fnm
     pnpm
+    typescript-language-server
   ];
 }
