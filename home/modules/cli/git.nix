@@ -4,17 +4,21 @@
   programs.git = {
     enable = true;
 
+    signing = {
+      format = "ssh";
+      key = "~/.ssh/id_ed25519.pub";
+      signByDefault = true;
+    };
+
     settings = {
       user = {
         name = "shimo8810";
         email = "shimo.8810@gmail.com";
-        signingKey = "C1D2264169F90618";
       };
 
       color.ui = "auto";
       core.editor = "nvim";
       init.defaultBranch = "main";
-      commit.gpgSign = true;
 
     };
 

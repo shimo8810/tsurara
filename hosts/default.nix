@@ -38,7 +38,7 @@ let
         {
           home = {
             inherit username;
-            stateVersion = "25.11";
+            stateVersion = "26.05";
           };
           programs.home-manager.enable = true;
         }
@@ -72,6 +72,18 @@ in
         isWayland = false;
       };
     };
+
+    "${username}@kafka" = mkHomeManagerConfiguration {
+      system = "x86_64-linux";
+      overlays = [
+        inputs.fenix.overlays.default
+      ];
+      modules = [ ./kafka/home.nix ];
+      params = {
+        isWayland = true;
+      };
+    };
+
 
     "${username}@montgomery" = mkHomeManagerConfiguration {
       system = "x86_64-linux";
