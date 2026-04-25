@@ -84,7 +84,6 @@ in
       };
     };
 
-
     "${username}@montgomery" = mkHomeManagerConfiguration {
       system = "x86_64-linux";
       overlays = [

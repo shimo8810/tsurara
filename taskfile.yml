@@ -63,17 +63,27 @@ tasks:
     desc: Check if the NVIDIA driver version in home.nix matches the installed driver
     cmds:
       - |
-        configured=$(grep -oP '(?<=version = ")[^"]+' hosts/hemingway/home.nix)
+        host=$(hostname)
+        home_nix="hosts/${host}/home.nix"
         installed=$(nvidia-smi --query-gpu=driver_version --format=csv,noheader 2>/dev/null | head -1)
         if [ -z "$installed" ]; then
           echo "NVIDIA driver not found on this host, skipping check."
+          exit 0
+        fi
+        if [ ! -f "$home_nix" ]; then
+          echo "No home.nix found for host '${host}', skipping check."
+          exit 0
+        fi
+        configured=$(grep -oP '(?<=version = ")[^"]+' "$home_nix")
+        if [ -z "$configured" ]; then
+          echo "No NVIDIA version configured in ${home_nix}, skipping check."
           exit 0
         fi
         echo "Configured: $configured"
         echo "Installed:  $installed"
         if [ "$configured" != "$installed" ]; then
           echo ""
-          echo "WARNING: Driver version mismatch! Update hosts/hemingway/home.nix."
+          echo "WARNING: Driver version mismatch! Update ${home_nix}."
           exit 1
         else
           echo "OK: versions match."
