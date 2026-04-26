@@ -4,6 +4,7 @@ fpath+=(/usr/share/zsh/site-functions)
 export PATH=$HOME/.cargo/bin:$PATH
 export PATH=$HOME/.volta/bin:$PATH
 
+bindkey -M viins '\e' undefined-key
 bindkey "^[[3~" delete-char
 bindkey "^[[H" beginning-of-line
 bindkey "^[[F" end-of-line
