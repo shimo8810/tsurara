@@ -1,5 +1,8 @@
-{ ... }:
+{ pkgs, ... }:
 {
+  xdg.configFile."systemd/user/graphical-session.target.wants/app-com.mitchellh.ghostty.service".source =
+    "${pkgs.ghostty}/share/systemd/user/app-com.mitchellh.ghostty.service";
+
   programs.ghostty = {
     enable = true;
     enableFishIntegration = true;
@@ -16,6 +19,8 @@
       cursor-style-blink = "true";
 
       copy-on-select = true;
+
+      quit-after-last-window-closed = false;
 
       quick-terminal-position = "top";
       quick-terminal-animation-duration = 0;
