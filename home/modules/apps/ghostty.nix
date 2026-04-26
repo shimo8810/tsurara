@@ -10,15 +10,24 @@
       background-opacity = 0.85;
 
       font-family = "HackGen Console NF";
-      font-size = 16;
+      font-size = 14;
 
       cursor-style = "bar";
       cursor-style-blink = "true";
 
       copy-on-select = true;
 
-      # fcitx5 が Ctrl+Space を受け取れるようにアンバインド
-      keybind = "ctrl+space=unbind";
+      quick-terminal-position = "top";
+      quick-terminal-animation-duration = 0;
+      quick-terminal-size = "100%";
+
+      keybind = [
+        "ctrl+space=unbind"
+        "ctrl+tab=unbind"
+        "ctrl+shift+tab=unbind"
+        "ctrl+shift+t=unbind"
+        "global:f12=toggle_quick_terminal"
+      ];
     };
   };
 }
