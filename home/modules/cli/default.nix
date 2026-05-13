@@ -31,11 +31,13 @@
     hyperfine
     lsd
     monolith
+    nvtopPackages.full
     poppler
     resvg
     ripgrep
     todoist
     tree
+    wl-clipboard
     xclip
     yt-dlp
   ];
