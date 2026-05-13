@@ -8,6 +8,8 @@
     enableFishIntegration = true;
     enableZshIntegration = true;
     settings = {
+      command = "zellij";
+
       theme = "TokyoNight";
       background = "#000000";
       background-opacity = 0.85;
