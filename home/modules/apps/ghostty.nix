@@ -1,14 +1,14 @@
 { pkgs, ... }:
 {
-  xdg.configFile."systemd/user/graphical-session.target.wants/app-com.mitchellh.ghostty.service".source =
-    "${pkgs.ghostty}/share/systemd/user/app-com.mitchellh.ghostty.service";
+  # xdg.configFile."systemd/user/graphical-session.target.wants/app-com.mitchellh.ghostty.service".source =
+  #   "${pkgs.ghostty}/share/systemd/user/app-com.mitchellh.ghostty.service";
 
   programs.ghostty = {
     enable = true;
     enableFishIntegration = true;
     enableZshIntegration = true;
     settings = {
-      command = "zellij";
+      # command = "zellij";
 
       theme = "TokyoNight";
       background = "#000000";
@@ -28,13 +28,13 @@
       quick-terminal-animation-duration = 0;
       quick-terminal-size = "100%";
 
-      keybind = [
-        "ctrl+space=unbind"
-        "ctrl+tab=unbind"
-        "ctrl+shift+tab=unbind"
-        "ctrl+shift+t=unbind"
-        "global:f12=toggle_quick_terminal"
-      ];
+      # keybind = [
+      #   "ctrl+space=unbind"
+      #   "ctrl+tab=unbind"
+      #   "ctrl+shift+tab=unbind"
+      #   "ctrl+shift+t=unbind"
+      #   "global:f12=toggle_quick_terminal"
+      # ];
     };
   };
 }
