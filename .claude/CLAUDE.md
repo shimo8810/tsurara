@@ -8,11 +8,14 @@ NixOS および Home Manager による個人環境設定リポジトリ。
 
 ## ホスト一覧
 
-| ホスト     | 種別                 | アーキテクチャ | 備考               |
-| ---------- | -------------------- | -------------- | ------------------ |
-| montgomery | NixOS + Home Manager | x86_64-linux   | Wayland (Hyprland) |
-| hemingway  | Home Manager のみ    | x86_64-linux   | non-Wayland        |
-| hokusai    | Home Manager のみ    | aarch64-darwin | macOS              |
+セッション開始時にフックで現在のホスト名が通知される。必ずそれを確認してから作業すること。
+
+| ホスト     | 種別                 | アーキテクチャ | 備考                     |
+| ---------- | -------------------- | -------------- | ------------------------ |
+| montgomery | NixOS + Home Manager | x86_64-linux   | Wayland (Hyprland)       |
+| hemingway  | Home Manager のみ    | x86_64-linux   | non-Wayland              |
+| hokusai    | Home Manager のみ    | aarch64-darwin | macOS                    |
+| kafka      | Home Manager のみ    | x86_64-linux   | Wayland、NVIDIA RTX 3070 |
 
 ## ディレクトリ構成
 
