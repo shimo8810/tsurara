@@ -39,6 +39,15 @@
         }
       ];
 
+      terminal.shell = {
+        program = "${config.programs.zsh.package}/bin/zsh";
+        args = [
+          "-l"
+          "-c"
+          "zellij"
+        ];
+      };
+
     };
   };
 }
