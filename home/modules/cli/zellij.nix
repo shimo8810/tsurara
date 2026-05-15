@@ -1,4 +1,4 @@
-{ pkgs, isWayland, ... }:
+{ config, pkgs, isWayland, ... }:
 let
   copyCommand =
     if pkgs.stdenv.isDarwin then
@@ -18,6 +18,7 @@ in
       default_layout = "compact";
       pane_frames = false;
       copy_command = copyCommand;
+      default_shell = "${config.programs.zsh.package}/bin/zsh";
 
       # keybinds._props.clear-defaults = true;
       keybinds.shared_except = {
