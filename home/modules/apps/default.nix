@@ -2,11 +2,12 @@
 {
 
   home.packages = with pkgs; [
-    postman
-    # freecad
+    freecad
+    gimp
     kicad
     librecad
-    gimp
+    # postman
+    vlc
   ];
 
   imports = [
