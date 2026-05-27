@@ -56,11 +56,11 @@
         "rust-analyzer-src": "rust-analyzer-src"
       },
       "locked": {
-        "lastModified": 1779790483,
-        "narHash": "sha256-2wCMtmVmkCcyHaH6hkrbx7XdUgLYP5E1wl/jc1YxxTY=",
+        "lastModified": 1779876442,
+        "narHash": "sha256-O25HomVNmdROO13PEQ3Ran8Hq5EsyLmVn8Gb8JvJtJE=",
         "owner": "nix-community",
         "repo": "fenix",
-        "rev": "6012e5463531342033571efe294ec880bf13dd95",
+        "rev": "2eff81fc84390a35e1565395ae945d9394856824",
         "type": "github"
       },
       "original": {
@@ -240,11 +240,11 @@
         "xdph": "xdph"
       },
       "locked": {
-        "lastModified": 1779729308,
-        "narHash": "sha256-tMt7oeAahwHGDgSIf5XKZoUXenOvlxjI0KBPku97tzM=",
+        "lastModified": 1779801868,
+        "narHash": "sha256-qLEUYPaxWezxcRttqLiU1/1YwrAiF0jfVyLePdpOKSs=",
         "ref": "refs/heads/main",
-        "rev": "bb3353f864be97e9236cfafca68ce71d7cf590dc",
-        "revCount": 7364,
+        "rev": "864dc89c9595095b5368a890fb39afbc75f590ca",
+        "revCount": 7368,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/hyprwm/Hyprland"
@@ -553,11 +553,11 @@
     "rust-analyzer-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1779742949,
-        "narHash": "sha256-Dk0hnFTXbmNmigsJyQkCz2NEEgtpe+MN500dPnki9Ic=",
+        "lastModified": 1779827300,
+        "narHash": "sha256-J6pHxKoZzWCrAvOVInwBcYYWix/NWwM10Ad+i29Qc5s=",
         "owner": "rust-lang",
         "repo": "rust-analyzer",
-        "rev": "462d95ca60fa7360b44258be94105bc20e203684",
+        "rev": "c3af07ad84d68adc5e652e86f0c20009caa29014",
         "type": "github"
       },
       "original": {
