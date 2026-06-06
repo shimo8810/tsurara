@@ -24,9 +24,7 @@
     fd
     ffmpeg
     fzf
-    gemini-cli
     gh
-    github-copilot-cli
     go-task
     hyperfine
     lsd
