@@ -2,10 +2,10 @@
 
 {
   imports = [
+    ./antigravity.nix
     ./aws.nix
     ./bat.nix
     ./claude_code.nix
-    ./gemini.nix
     ./git.nix
     ./helix.nix
     ./jq.nix
