@@ -6,7 +6,7 @@
     gimp
     kicad
     librecad
-    # postman
+    ngspice
     vlc
   ];
 

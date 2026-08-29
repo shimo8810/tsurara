@@ -4,7 +4,7 @@
   #   "${pkgs.ghostty}/share/systemd/user/app-com.mitchellh.ghostty.service";
 
   programs.ghostty = {
-    enable = true;
+    enable = false;
     enableFishIntegration = true;
     enableZshIntegration = true;
     settings = {

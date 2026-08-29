@@ -1,6 +1,6 @@
 { ... }:
 {
-  programs.antigravity-cli = {
-    enable = true;
-  };
+  # programs.antigravity-cli = {
+  #   enable = true;
+  # };
 }
