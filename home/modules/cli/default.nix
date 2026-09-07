@@ -8,6 +8,7 @@
     ./claude_code.nix
     ./git.nix
     ./helix.nix
+    ./herdr.nix
     ./jq.nix
     ./neovim
     ./tmux
