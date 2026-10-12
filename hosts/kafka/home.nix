@@ -9,7 +9,9 @@ let
 in
 {
   home.homeDirectory = "/home/${username}";
-
+  home.sessionPath =  [
+    "$HOME/.local/share/vite-plus/bin"
+  ];
   xsession.enable = true;
 
   targets.genericLinux = {
