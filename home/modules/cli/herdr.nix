@@ -3,9 +3,11 @@
   programs.herdr = {
     enable = true;
 
-    # settings = {
-
-    # };
+    settings = {
+      theme = {
+        dark_name = "tokyo-night";
+      };
+    };
   };
 
 }
