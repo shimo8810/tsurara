@@ -56,11 +56,11 @@
         "rust-analyzer-src": "rust-analyzer-src"
       },
       "locked": {
-        "lastModified": 1792838306,
-        "narHash": "sha256-fBD2iETShAeaJlVm7ieZGhAgaxcLk9OHe/2LnqgvZ4Q=",
+        "lastModified": 1793018157,
+        "narHash": "sha256-kArfwGR+jBZHzYf2+4Bp9SIfYikKlM8GfxlvO/TV1Oo=",
         "owner": "nix-community",
         "repo": "fenix",
-        "rev": "e691190ae78c9551d1e6a0cba156555c8f7cceca",
+        "rev": "39ed929ecdac73f1d4f6adeb416399f1eb052ab4",
         "type": "github"
       },
       "original": {
@@ -219,11 +219,11 @@
         "xdph": "xdph"
       },
       "locked": {
-        "lastModified": 1792868113,
-        "narHash": "sha256-tPQ3rRbS8DgH71XFyhcRS0aeyblhYtWYAkgCwkWsCFs=",
+        "lastModified": 1792919706,
+        "narHash": "sha256-9Sxo9TLheb4gLRVWL9qSv+aCy14CBg4boqSX5BrTs7s=",
         "ref": "refs/heads/main",
-        "rev": "390f8f8297911620d5dcb226520ba0cf21e43479",
-        "revCount": 7959,
+        "rev": "c4e7596a3db89cb0d213eeb3e436599422995b43",
+        "revCount": 7961,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/hyprwm/Hyprland"
